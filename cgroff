@@ -1,0 +1,13 @@
+#!/bin/sh
+#+ Autor:	Ran#
+#+ Creado:	04/2019
+#+ Editado:	10/06/2019 18:56:54
+
+[ -z $(find . -type f -mmin 0.1) ] && echo 'sen cambios' || groff -ms "$1".ms -T pdf -K utf8 > "$1".pdf
+
+#if [ ! -z $(find $dir -type f -mmin 1 | grep $dir\/"$1".ms) ]
+#then
+#	groff -ms "$1".ms -T pdf -K utf8 > "$1".pdf
+#else
+#	echo Sen cambios
+#fi
