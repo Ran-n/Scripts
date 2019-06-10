@@ -9,7 +9,7 @@ Mete a metadata nun ficheiro, autor e datas e tamén cha permite ver se está co
 Para compilar ficheiros groff co macro ms. Usándoo con watch -n 1 podemos facer que se nos faga o pdf ao segundo de que cambiemos algo no ficheiro.
 
 ## pass_wifi_win.py
-Windows/pass_wifi_win.py\n
+Windows/pass_wifi_win.py
 Mostra os contrasinais para as redes que tes gardadas no teu equipo windows.
 
 ## update-grub
