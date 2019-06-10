@@ -1,0 +1,8 @@
+#! /bin/bash
+#+ Autor:	Ran#
+#+ Creado:	15/05/2019
+#+ Editado:	31/05/2019
+
+printf "Grupo\t- Admin\n"
+echo ----------------
+cut -d: -f 1,3 /etc/gshadow | sed 's/:/ /' | awk '{if ($2!="") print $1 "\t- "$2}'

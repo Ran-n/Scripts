@@ -1,0 +1,9 @@
+#!/bin/sh
+# by Ran#
+
+if [ ! -z $(find . -type f -mmin 0.1 | grep $1.ms) ]
+then
+	groff -ms $1.ms -T pdf -K utf8 > $1.pdf
+else
+	echo Sen cambios
+fi
