@@ -1,5 +1,7 @@
 #!/bin/sh
-# by Ran#
+#+ Autor:	Ran#
+#+ Creado:	04/2019
+#+ Editado:	10/06/2019 17:17:19
 
 if [ ! -z $(find . -type f -mmin 0.1 | grep $1.ms) ]
 then

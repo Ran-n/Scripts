@@ -1,6 +1,6 @@
 #! /bin/sh
 #+ Autor:	Ran#
 #+ Creado:	07/06/2019 20:23:40
-#+ Editado:	07/06/2019 20:23:40
+#+ Editado:	10/06/2019 17:28:10
 
-sudo grub-mkconfig -o /boot/grub/grub.cfg
+grub-mkconfig -o /boot/grub/grub.cfg
