@@ -4,6 +4,6 @@
 #+ Editado:	09/06/2019 22:58:25
 
 git clone https://aur.archlinux.org/"$1".git ~/Programas/"$1"
-chown $USER:$USER ~/Programas/"$1"
+#chown $USER:$USER ~/Programas/"$1"
 cd ~/Programas/"$1"
 makepkg -sirc --noconfirm
