@@ -1,4 +1,3 @@
-![Eclipse Marketplace](https://img.shields.io/eclipse-marketplace/l/scripts.svg)
 # Scripts
 ## getadmins
 Mostrache os admins de grupos dun sistema gnu/linux.
