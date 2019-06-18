@@ -1,4 +1,4 @@
-https://img.shields.io/github/license/ran-n/scripts.svg
+![GitHub](https://img.shields.io/github/license/ran-n/scripts.svg)
 # Scripts
 ## getadmins
 Mostrache os admins de grupos dun sistema gnu/linux.
