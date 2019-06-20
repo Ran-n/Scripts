@@ -1,0 +1,24 @@
+#! /bin/sh
+#+ Autor:	Ran#
+#+ Creado:	20/06/2019 13:26:06
+#+ Editado:	20/06/2019 13:45:07
+
+case $1 in
+	"txt")
+	find . -type f -name "*.txt" | while read ONELINE; do enscript "$ONELINE" -p "$(echo "$ONELINE" | sed 's/.txt/.ps/g')"; done
+	;;
+	"json")
+	find . -type f -name "*.json" | while read ONELINE; do enscript "$ONELINE" -p "$(echo "$ONELINE" | sed 's/.json/.ps/g')"; done
+	;;
+	"py")
+	find . -type f -name "*.py" | while read ONELINE; do enscript "$ONELINE" -p "$(echo "$ONELINE" | sed 's/.py/.ps/g')"; done
+	;;
+	*)
+	echo -e "Non soportado"
+	;;
+esac
+rm *.$1
+
+find . -type f -name "*.ps" | while read ONELINE; do ps2pdf "$ONELINE" "$(echo "$ONELINE" | sed 's/.ps/.pdf/g')"; done
+rm *.ps
+
