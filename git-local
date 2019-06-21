@@ -1,0 +1,7 @@
+#! /bin/sh
+#+ Autor:	Ran#
+#+ Creado:	21/06/2019 16:13:56
+#+ Editado:	21/06/2019 16:13:56
+
+git config user.email "ran-n@tutanota.com"
+git config user.name "Ran-n"
