@@ -1,5 +1,27 @@
 ![GitHub](https://img.shields.io/github/license/ran-n/scripts.svg)
 # Scripts
+
+## Donations
+| Coin | Address |
+| ---- | ------- |
+| Bitcoin | bc1q4gj3t0f4aulrn7z3dtgfxrxsv5c323x5yzvz7r |
+
+----
+No english version atm.
+## getadmins
+
+## metadata
+
+## rcg
+
+## pass\_wifi\_win.py
+
+## update-grub
+
+## pacma
+
+----
+
 ## getadmins
 Mostrache os admins de grupos dun sistema gnu/linux.
 
