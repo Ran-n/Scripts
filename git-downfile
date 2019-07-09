@@ -1,0 +1,9 @@
+#! /bin/sh
+#+ Autor:	Ran#
+#+ Creado:	09/07/2019 19:47:42
+#+ Editado:	09/07/2019 20:06:06
+
+usrep=$(echo "$1"|cut -d'/' -f 4-5)
+fich=$(echo "$1"|cut -d'/' -f 7-)
+
+echo https://raw.githubusercontent.com/$usrep/$fich
