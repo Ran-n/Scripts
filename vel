@@ -1,0 +1,8 @@
+#! /bin/sh
+#+ Autor:	Ran#
+#+ Creado:	2019
+#+ Editado:	07/03/2020 23:13:40
+
+pip install --user speedtest-cli 2> /dev/null
+
+curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -
