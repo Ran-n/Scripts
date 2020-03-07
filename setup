@@ -1,0 +1,16 @@
+#! /bin/sh
+#+ Autor:	Ran#
+#+ Creado:	08/03/2020 00:13:08
+#+ Editado:	08/03/2020 00:34:01
+
+# poñoo como printf porque é máis sinxelo e, aparentemente, máis veloz
+#echo -n Copiando os ficheiros de configuración...$'\t'
+printf "Copiando os ficheiros de configuración...\t"
+./cp-fichsconfig
+echo "OK"
+
+printf "Copiando os scripts básicos a /usr/local/bin...\t"
+sudo ./cp-scripts
+# Poño a opción sen sudo porque non é de boa práctica poñer sudo nos scripts. Eu sei o que fago pero igual ti querelo como embaixo. Tan so terías que executar este script (setupt) coma sudo.
+#./cp-scripts
+echo "OK"

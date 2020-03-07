@@ -1,9 +1,10 @@
 #! /bin/sh
 #+ Autor:	Ran#
 #+ Creado:	07/03/2020 22:33:09
-#+ Editado:	07/03/2020 22:45:24
+#+ Editado:	08/03/2020 00:19:36
 
 # Script que me permite meter os meus ficheiros de configuración en calquera máquina na que esté a trabalhar
 
 cp -r media/cnfiles/. ~
-source ~/.bashrc
+# da igual que faga iso porque o script corre no seu propio shell o cal fai que non teña efecto logo no resto de shells que teña abertos
+#source ~/.bashrc
