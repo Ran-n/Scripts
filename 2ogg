@@ -1,9 +1,19 @@
 #!/bin/sh
-# semiby Ran#
-#
-for i in *.webm or *.mp4 or *.m4a;
-  do name=`echo $i | cut -d'.' -f1`;
-  echo $name;
-  ffmpeg -i "$i" -crf -o "${name}.ogg";  
-done
-rm *.webm *.mp4 *.m4a
+#+ Autor:	StackOverflow + Ran#
+#+ Creado:	2019
+#+ Editado:	08/03/2020 00:06:39
+
+# se metes unha variable esa variable en concreto
+if [ -n "$1" ]; then
+	nome=`echo $1 | cut -d'.' -f1`;
+	ffmpeg -i "$1" -crf -o "${nome}.ogg";  
+	rm $1
+# se non metes variable toda a carpeta
+else
+	for i in *.webm or *.mp4 or *.m4a; do 
+		nome=`echo $i | cut -d'.' -f1`;
+  		echo $nome;
+  		ffmpeg -i "$i" -crf -o "${nome}.ogg";  
+	done
+	rm *.webm *.mp4 *.m4a
+fi
