@@ -26,21 +26,24 @@ alias md='metadata'
 
 ## cds no sistema
 ### Carpetas base
-alias docs='cd ~/Documents; ls'
-alias des='cd ~/Downloads; ls'
-alias mus='cd ~/Music; ls'
-alias fotos='cd ~/Pictures; ls'
+alias docs='cd ~/Documentos; ls'
+alias des='cd ~/Descargas; ls'
+alias mus='cd ~/Musica; ls'
+alias fotos='cd ~/Imaxes; ls'
 alias vid='cd ~/Videos; ls'
-alias sw='cd ~/Software; ls'
+alias sw='cd ~/Programas; ls'
 
 alias ulb="cd /usr/local/bin; ls"
 
 # Carpetas de Descargas específicas
-alias dtelegram='cd ~/Downloads/Telegram\ Desktop; ls'
-alias dtele='cd ~/Downloads/Telegram\ Desktop; ls'
-alias dbrave='cd ~/Downloads/Brave; ls'
-alias dtorrente='cd ~/Downloads/Torrente; ls'
-alias dtorrent='cd ~/Downloads/Torrente; ls'
+alias dtelegram='cd ~/Descargas/Telegram\ Desktop; ls'
+alias dtele='cd ~/Descargas/Telegram\ Desktop; ls'
+alias dbrave='cd ~/Descargas/Brave; ls'
+alias dtorrente='cd ~/Descargas/Torrente; ls'
+alias dtorrent='cd ~/Descargas/Torrente; ls'
 
 ### clase
-alias fric='cd ~/Documents/FrIC; ls'
+alias fric='cd ~/Documentos/FrIC; ls'
+alias toxtrac='conda activate toxtrac; ls'
+alias condad='conda deactivate'
+alias condaa='conda activate; ls'

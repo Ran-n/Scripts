@@ -1,0 +1,14 @@
+#! /bin/sh
+#+ Autor:	Ran#
+#+ Creado:	08/03/2020 13:31:26
+#+ Editado:	08/03/2020 17:10:45
+
+printf "Modificando os nomes das carpetas...\t\t"
+mv ~/Desktop ~/Escritorio 2> /dev/null
+mv ~/Documents ~/Documentos 2> /dev/null
+mv ~/Downloads ~/Descargas 2> /dev/null
+mv ~/Music ~/Musica 2> /dev/null
+mv ~/Pictures ~/Imaxes 2> /dev/null
+mv ~/Public ~/Publico 2> /dev/null
+mv ~/Software ~/Programas 2> /dev/null
+printf "OK\n"
