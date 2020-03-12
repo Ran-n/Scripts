@@ -1,7 +1,7 @@
 #! /bin/sh
 #+ Autor:	Ran#
 #+ Creado:	03/07/2019 22:56:46
-#+ Editado:	03/07/2019 22:56:46
+#+ Editado:	12/03/2020 13:07:44
 
 git add .
 git commit -m "$1"

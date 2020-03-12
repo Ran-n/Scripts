@@ -21,6 +21,9 @@ alias nv='nvim'
 alias snv='sudo nvim'
 alias xclip='xargs echo -n | xclip -selection clipboard'
 
+alias condad='conda deactivate'
+alias condaa='conda activate; ls'
+
 ### programas e scripts propios
 alias md='metadata'
 
@@ -44,6 +47,10 @@ alias dtorrent='cd ~/Descargas/Torrente; ls'
 
 ### clase
 alias fric='cd ~/Documentos/FrIC; ls'
+alias cp='cd ~/Documentos/FrIC/cp; ls'
+alias id='cd ~/Documentos/FrIC/id; ls'
+alias abd='cd ~/Documentos/FrIC/abd; ls'
+alias cxt='cd ~/Documentos/FrIC/cxt; ls'
+alias tfg='cd ~/Documentos/FrIC/tfg; ls'
+
 alias toxtrac='conda activate toxtrac; ls'
-alias condad='conda deactivate'
-alias condaa='conda activate; ls'
