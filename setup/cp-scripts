@@ -6,5 +6,5 @@
 #* Script para copiar os scripts básicos directamente a /usr/local/bin
 
 printf "Copiando os scripts básicos a /usr/local/bin...\t"
-cp metadata rmswaps vel 2ogg 2pdf git-commit git-downfile git-local pomodoro.py /usr/local/bin
+cp metadata rmswaps vel 2ogg 2pdf gc gdf gl pomodoro.py /usr/local/bin
 printf "OK\n"
