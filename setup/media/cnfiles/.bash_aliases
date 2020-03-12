@@ -36,6 +36,10 @@ alias fotos='cd ~/Imaxes; ls'
 alias vid='cd ~/Videos; ls'
 alias sw='cd ~/Programas; ls'
 
+alias scripts='cd ~/Programas/scripts; ls'
+alias tutos='cd ~/Programas/tutos; ls'
+alias ledo='cd ~/Programas/ledo; ls'
+
 alias ulb="cd /usr/local/bin; ls"
 
 # Carpetas de Descargas específicas
