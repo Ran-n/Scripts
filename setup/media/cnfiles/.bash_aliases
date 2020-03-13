@@ -20,6 +20,7 @@ alias sv='sudo vim'
 alias nv='nvim'
 alias snv='sudo nvim'
 alias xclip='xargs echo -n | xclip -selection clipboard'
+alias 7ze='7z e'
 
 alias condad='conda deactivate'
 alias condaa='conda activate; ls'
@@ -37,6 +38,7 @@ alias vid='cd ~/Videos; ls'
 alias sw='cd ~/Programas; ls'
 
 alias scripts='cd ~/Programas/scripts; ls'
+alias s='cd ~/Programas/scripts; ls'
 alias tutos='cd ~/Programas/tutos; ls'
 alias ledo='cd ~/Programas/ledo; ls'
 
