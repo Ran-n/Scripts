@@ -1,7 +1,7 @@
 #! ALIASES
 #+ Autor:	Ran#
 #+ Creado:	03/2020
-#+ Editado:	13/03/2020 08:04:07
+#+ Editado:	13/03/2020 08:09:24
 
 ## para poder usar os alias co sudo
 sudo() { if alias "$1" &> /dev/null ; then $(type "$1" | sed -E 's/^.*`(.*).$/\1/') "${@:2}" ; else command sudo $@ ; fi }
@@ -41,7 +41,7 @@ alias vid='cd ~/Videos; ls'
 alias sw='cd ~/Programas; ls'
 
 alias scripts='cd ~/Programas/scripts; ls'
-alias s='cd ~/Programas/scripts; ls'
+alias sc='cd ~/Programas/scripts; ls'
 alias tutos='cd ~/Programas/tutos; ls'
 alias ledo='cd ~/Programas/ledo; ls'
 
