@@ -1,7 +1,7 @@
 #! /bin/sh
 #+ Autor:	Ran#
 #+ Creado:	07/03/2020 22:33:09
-#+ Editado:	08/03/2020 18:08:17
+#+ Editado:	13/03/2020 08:13:58
 
 # Script que me permite meter os meus ficheiros de configuración en calquera máquina na que esté a trabalhar
 
@@ -13,6 +13,6 @@ cp -r setup/media/cnfiles/. ~
 printf "OK\n"
 
 # se non metes variable
-if [ -n "$1" ]; then
-	exec bash
-fi
+#if [ -n "$1" ]; then
+#	exec bash
+#fi

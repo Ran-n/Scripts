@@ -1,18 +1,19 @@
 #! /bin/sh
 #+ Autor:	Ran#
 #+ Creado:	08/03/2020 00:13:08
-#+ Editado:	13/03/2020 07:55:19
+#+ Editado:	13/03/2020 08:13:51
 
 ./setup/carpetas
 
 # poñoo como printf porque é máis sinxelo e, aparentemente, máis veloz
 #echo -n Copiando os ficheiros de configuración...$'\t'
-./setup/cp-fichsconfig $1
+#./setup/cp-fichsconfig $1
+./setup/cp-fichsconfig
 
 sudo ./setup/cp-scripts
 # Poño a opción sen sudo porque non é de boa práctica poñer sudo nos scripts. Eu sei o que fago pero igual ti querelo como embaixo. Tan so terías que executar este script (setupt) coma sudo.
 #./cp-scripts
 
-if [ -n "$1" ]; then
-	exec bash
-fi
+#if [ -n "$1" ]; then
+#	exec bash
+#fi
