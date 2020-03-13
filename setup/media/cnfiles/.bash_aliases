@@ -1,4 +1,7 @@
-# ALIASES
+#! ALIASES
+#+ Autor:	Ran#
+#+ Creado:	03/2020
+#+ Editado:	13/03/2020 08:04:07
 
 ## para poder usar os alias co sudo
 sudo() { if alias "$1" &> /dev/null ; then $(type "$1" | sed -E 's/^.*`(.*).$/\1/') "${@:2}" ; else command sudo $@ ; fi }
