@@ -1,14 +1,27 @@
 #! /bin/sh
 #+ Autor:	Ran#
 #+ Creado:	08/03/2020 13:31:26
-#+ Editado:	08/03/2020 17:10:45
+#+ Editado:	13/03/2020 07:55:42
 
-printf "Modificando os nomes das carpetas...\t\t"
+printf "Creando ou modificando os nomes das carpetas...\t"
 mv ~/Desktop ~/Escritorio 2> /dev/null
+mkdir -p ~/Escritorio
+
 mv ~/Documents ~/Documentos 2> /dev/null
+mkdir -p ~/Documentos
+
 mv ~/Downloads ~/Descargas 2> /dev/null
+mkdir -p ~/Descargas
+
 mv ~/Music ~/Musica 2> /dev/null
+mkdir -p ~/Musica
+
 mv ~/Pictures ~/Imaxes 2> /dev/null
+mkdir -p ~/Imaxes
+
 mv ~/Public ~/Publico 2> /dev/null
+mkdir -p ~/Publico
+
 mv ~/Software ~/Programas 2> /dev/null
+mkdir -p ~/Programas
 printf "OK\n"
