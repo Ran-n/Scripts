@@ -1,7 +1,7 @@
 #! ALIASES
 #+ Autor:	Ran#
 #+ Creado:	03/2020
-#+ Editado:	13/03/2020 08:09:24
+#+ Editado:	15/03/2020 00:58:36
 
 ## para poder usar os alias co sudo
 sudo() { if alias "$1" &> /dev/null ; then $(type "$1" | sed -E 's/^.*`(.*).$/\1/') "${@:2}" ; else command sudo $@ ; fi }
@@ -44,7 +44,7 @@ alias sw='cd ~/Programas; ls'
 alias scripts='cd ~/Programas/scripts; ls'
 alias sc='cd ~/Programas/scripts; ls'
 alias tutos='cd ~/Programas/tutos; ls'
-alias ledo='cd ~/Programas/ledo; ls'
+alias cdledo='cd ~/Programas/ledo; ls'
 
 alias ulb="cd /usr/local/bin; ls"
 
@@ -57,10 +57,11 @@ alias dtorrent='cd ~/Descargas/Torrente; ls'
 
 ### clase
 alias fric='cd ~/Documentos/FrIC; ls'
-alias fcp='cd ~/Documentos/FrIC/cp; ls'
-alias fid='cd ~/Documentos/FrIC/id; ls'
-alias fabd='cd ~/Documentos/FrIC/abd; ls'
-alias fcxt='cd ~/Documentos/FrIC/cxt; ls'
-alias ftfg='cd ~/Documentos/FrIC/tfg; ls'
+alias cdfric='cd ~/Documentos/FrIC; ls'
+alias cdcp='cd ~/Documentos/FrIC/cp; ls'
+alias cdid='cd ~/Documentos/FrIC/id; ls'
+alias cdabd='cd ~/Documentos/FrIC/abd; ls'
+alias cdcxt='cd ~/Documentos/FrIC/cxt; ls'
+alias cdtfg='cd ~/Documentos/FrIC/tfg; ls'
 
 alias toxtrac='conda activate toxtrac; ls'
