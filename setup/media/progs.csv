@@ -1,0 +1,16 @@
+#!
+#+ Autor:	Ran#
+#+ Creado:	15/03/2020 14:37:28
+#+ Editado:	15/03/2020 14:56:06
+
+# TAGS:
+# 		> Transplataforma.
+# arch		> Exclusivo dos tipos Arch.
+# aur		> Baixalo do Arch User Repository.
+# debian	> Exclusivo dos tipo Debian.
+# github 	> Baixalo de Github.
+
+#TAG,NOME,DESC
+,pandoc,conversor entre tipos de documentos (md html latex etc)
+,sxiv,visor de fotos
+,mpv,visor multimedia
