@@ -1,0 +1,19 @@
+#! /bin/sh
+#+ Autor:	Ran#
+#+ Creado:	15/03/2020 01:12:36
+#+ Editado:	15/03/2020 01:22:34
+
+# se a variable da lonxitude do string é nula
+if [ -z $1 ]; then
+	printf '** Dime unha lonxitude en número\n'
+	exit 1
+fi
+
+# se a variable é nula usamos caracteres básicos
+if [ -z $2 ]; then
+	LC_ALL=C tr -dc A-Za-z0-9 </dev/urandom | head -c $1; echo
+
+# se a variable non é nula metemos fantasía
+else
+	</dev/urandom LC_ALL=C tr -dc 'A-Za-z0-9!"#$%&'\''()*+,-./:;<=>?@[\]^_`{|}~' | head -c $1; echo
+fi
