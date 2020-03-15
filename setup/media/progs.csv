@@ -14,3 +14,4 @@
 ,pandoc,conversor entre tipos de documentos (md html latex etc)
 ,sxiv,visor de fotos
 ,mpv,visor multimedia
+,youtube-dl,descargador de vídeos
