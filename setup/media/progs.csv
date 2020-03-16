@@ -15,3 +15,5 @@
 ,sxiv,visor de fotos
 ,mpv,visor multimedia
 ,youtube-dl,descargador de vídeos
+arch,perl-rename,comando que permite facer renomeamentos en masa
+debian,rename,comando que permite facer renomeamentos en masa
