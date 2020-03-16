@@ -1,7 +1,7 @@
 #! ALIASES
 #+ Autor:	Ran#
 #+ Creado:	03/2020
-#+ Editado:	16/03/2020 14:50:06
+#+ Editado:	16/03/2020 15:37:02
 
 ## para poder usar os alias co sudo
 sudo() { if alias "$1" &> /dev/null ; then $(type "$1" | sed -E 's/^.*`(.*).$/\1/') "${@:2}" ; else command sudo $@ ; fi }
@@ -25,6 +25,7 @@ alias nv='nvim'
 alias snv='sudo nvim'
 alias xclip='xargs echo -n | xclip -selection clipboard'
 alias 7ze='7z e'
+alias ydl='youtube-dl'
 
 alias condad='conda deactivate'
 alias condaa='conda activate; ls'
