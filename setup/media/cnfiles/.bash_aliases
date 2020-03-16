@@ -1,7 +1,7 @@
 #! ALIASES
 #+ Autor:	Ran#
 #+ Creado:	03/2020
-#+ Editado:	15/03/2020 00:58:36
+#+ Editado:	16/03/2020 14:50:06
 
 ## para poder usar os alias co sudo
 sudo() { if alias "$1" &> /dev/null ; then $(type "$1" | sed -E 's/^.*`(.*).$/\1/') "${@:2}" ; else command sudo $@ ; fi }
@@ -34,12 +34,14 @@ alias md='metadata'
 
 ## cds no sistema
 ### Carpetas base
-alias docs='cd ~/Documentos; ls'
-alias des='cd ~/Descargas; ls'
-alias mus='cd ~/Musica; ls'
-alias fotos='cd ~/Imaxes; ls'
-alias vid='cd ~/Videos; ls'
-alias sw='cd ~/Programas; ls'
+alias cddocs='cd ~/Documentos; ls'
+alias cddes='cd ~/Descargas; ls'
+alias cdmus='cd ~/Musica; ls'
+alias cdmusa='cd ~/Musica/Audio; ls'
+alias cdmusv='cd ~/Musica/VideoClips; ls'
+alias cdfotos='cd ~/Imaxes; ls'
+alias cdvid='cd ~/Videos; ls'
+alias cdsw='cd ~/Programas; ls'
 
 alias scripts='cd ~/Programas/scripts; ls'
 alias sc='cd ~/Programas/scripts; ls'
