@@ -1,0 +1,28 @@
+#! /bin/sh
+#+ Autor:	Ran#
+#+ Creado:	18/03/2020 00:29:44
+#+ Editado:	18/03/2020 12:55:57
+
+#+ Variables:
+#+ $1 : Tipo de conversión a realizar.
+#+ $2 : Arquivo a converter.
+
+case $1 in
+# de mp4<>mkv son wrappers sobre o mesmo contido. Recodificar faríanos perder calidade.
+	'mp4>mkv')
+		for i in *.mp4; do
+    			ffmpeg -i "$i" -codec copy "${i%.*}.mkv"
+		done
+		;;
+
+	'mkv>mp4')
+		for i in *.mkv; do
+    			ffmpeg -i "$i" -codec copy "${i%.*}.mp4"
+		done
+		;;
+	*)
+		echo 'Conversións soportadas:'
+		echo '>    mp4 to mkv. Opción = mp4>mkv' 
+		echo '>    mkv to mp4. Opción = mkv>mkv' 
+		;;
+esac

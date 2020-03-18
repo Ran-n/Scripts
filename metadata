@@ -1,36 +1,36 @@
 #! /bin/bash
 #+ Autor:	Ran#
 #+ Creado:	05/06/2019
-#+ Editado:	07/06/2019 20:25:59
+#+ Editado:	18/03/2020 12:47:27
 
 data=$(date +%d/%m/%Y\ %R:%S)
 
 case $1 in
 	"-e"|"--editado")
-	sed -i "s|^#+ Editado:.*|#+ Editado:\t$data|" $2
-	;;
+		sed -i "s|^#+ Editado:.*|#+ Editado:\t$data|" $2
+		;;
 
 	"-c"|"--creado")
-	sed -i "s|^#!\(.*\)|#!\1\n#+ Autor:\tRan#\n#+ Creado:\t$data\n#+ Editado:\t$data|" $2
-	;;
+		sed -i "s|^#!\(.*\)|#!\1\n#+ Autor:\tRan#\n#+ Creado:\t$data\n#+ Editado:\t$data|" $2
+		;;
 
 	"-a"|"--axuda")
-	echo -e "-e, --editado\t> cambiar data de edición."
-	echo -e "-c, --creado\t> inserir as liñas de autor, creado e editado por primeira vez."
-	echo -e "-a, --axuda\t> imprimir este mensaxe."
-	echo -e "-m, --mostrala\t> imprimir a metadata do ficheiro."
-	echo -e "-s, --suprimir\t> suprimir a metadata do ficheiro."
-	;;
+		echo -e "-e, --editado\t> cambiar data de edición."
+		echo -e "-c, --creado\t> inserir as liñas de autor, creado e editado por primeira vez."
+		echo -e "-a, --axuda\t> imprimir este mensaxe."
+		echo -e "-m, --mostrala\t> imprimir a metadata do ficheiro."
+		echo -e "-s, --suprimir\t> suprimir a metadata do ficheiro."
+		;;
 
 	"-m"|"--mostrarla")
-	grep "^#+" $2
-	;;
+		grep "^#+" $2
+		;;
 	
 	"-s"|"--suprimir")
-	sed -i "/^#+.*/d" $2
-	;;
+		sed -i "/^#+.*/d" $2
+		;;
 
 	*)
-	echo "Editado (-e), creado (-c), axuda (-a), mostrar metadata (-m)"
-	;;
+		echo "Editado (-e), creado (-c), axuda (-a), mostrar metadata (-m)"
+		;;
 esac

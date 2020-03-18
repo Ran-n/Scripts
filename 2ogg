@@ -5,7 +5,7 @@
 
 #+ Variables:
 #+ $1 > Arquivo concreto	[opcional]
-#+ $2 > Nome de saída	[opcional]
+#+ $2 > Nome de saída		[opcional]
 
 # se metes unha variable esa variable en concreto
 if [ -n "$1" ]; then
