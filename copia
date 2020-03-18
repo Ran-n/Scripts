@@ -1,0 +1,10 @@
+#! /bin/sh
+#+ Autor:	Ran#
+#+ Creado:	18/03/2020 14:53:03
+#+ Editado:	18/03/2020 14:56:34
+
+#* Variables
+#* $1 : Texto a copiar na clipboard
+
+# mandamoslle o echo do $1 a xclip quitandolle o intro co xargs
+echo $1 | xargs echo -n | xclip -selection clipboard
