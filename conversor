@@ -3,9 +3,9 @@
 #+ Creado:	18/03/2020 00:29:44
 #+ Editado:	18/03/2020 12:55:57
 
-#+ Variables:
-#+ $1 : Tipo de conversión a realizar.
-#+ $2 : Arquivo a converter.
+#* Variables:
+#* $1 : Tipo de conversión a realizar.
+#* $2 : Arquivo a converter.		[Opcional]
 
 case $1 in
 # de mp4<>mkv son wrappers sobre o mesmo contido. Recodificar faríanos perder calidade.

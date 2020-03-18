@@ -3,9 +3,9 @@
 #+ Creado:	2019
 #+ Editado:	16/03/2020 15:29:19
 
-#+ Variables:
-#+ $1 > Arquivo concreto	[opcional]
-#+ $2 > Nome de saída		[opcional]
+#* Variables:
+#* $1 > Arquivo concreto	[opcional]
+#* $2 > Nome de saída		[opcional]
 
 # se metes unha variable esa variable en concreto
 if [ -n "$1" ]; then
