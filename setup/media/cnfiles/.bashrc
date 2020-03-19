@@ -174,5 +174,5 @@ if [ -f ~/.bash_aliases ]; then
 fi
 
 ## editor por defecto
-export VISUAL=vim
+export VISUAL=nvim
 export EDITOR="$VISUAL"
