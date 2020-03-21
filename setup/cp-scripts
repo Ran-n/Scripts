@@ -1,10 +1,10 @@
 #! /bin/sh
 #+ Autor:	Ran#
 #+ Creado:	08/03/2020 00:07:50
-#+ Editado:	18/03/2020 14:59:18
+#+ Editado:	21/03/2020 15:39:27
 
 #* Script para copiar os scripts básicos directamente a /usr/local/bin
 
 printf "Copiando os scripts básicos a /usr/local/bin...\t"
-cp metadata rmswaps vel 2ogg 2pdf gc gdf gl pomodoro.py aleatorio conversor copia /usr/local/bin
+cp ydla metadata rmswaps vel 2ogg 2pdf gc gdf gl pomodoro.py aleatorio conversor copia /usr/local/bin
 printf "OK\n"
