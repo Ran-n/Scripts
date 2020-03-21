@@ -1,14 +1,14 @@
 #! /bin/sh
 #+ Autor:	Ran#
 #+ Creado:	21/03/2020 12:55:47
-#+ Editado:	21/03/2020 15:39:09
+#+ Editado:	21/03/2020 15:44:37
 
 
 #* Variables
 #* $1 : ligazón
 #* $2 : título
 #* $3 : autor
-#* $4 : ogg	[opcional]
+#* $4 : ogg	[opcional DESACTIVADA]
 
 # por se non metes argumentos
 [ $# -eq 0 ] && exit 0
@@ -26,8 +26,11 @@
 		  exit 0;
 	  	}
 
+# eu quero todos baixados así pero para que se poda editar facil
+youtube-dl -x -o "$2 ~ $3.(ext)s" $1 --recode-video ogg
+
 # se metes 4 elemtos
-[ $# -eq 4 ] && { [ $4 == "-ogg" ] && youtube-dl -x -o "$2 ~ $3.(ext)s" $1 --recode-video ogg; exit 1; }
+#[ $# -eq 4 ] && { [ $4 == "-ogg" ] && youtube-dl -x -o "$2 ~ $3.(ext)s" $1 --recode-video ogg; exit 1; }
 #if [ $# -eq 4 ]; then
 	# mira que sexa ogg o último, se o é baixaoo como ogg senón feira
 #	[ $4 == "-ogg" ] && youtube-dl -x -o "$2 ~ $3.(ext)s" $1 --recode-video ogg
@@ -35,4 +38,4 @@
 #fi
 
 # se non ten 4 eltos baixaoo feira 
-youtube-dl -x -o "$2 ~ $3.(ext)s" $1
+#youtube-dl -x -o "$2 ~ $3.(ext)s" $1
