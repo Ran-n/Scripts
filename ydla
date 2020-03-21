@@ -1,41 +1,33 @@
 #! /bin/sh
 #+ Autor:	Ran#
 #+ Creado:	21/03/2020 12:55:47
-#+ Editado:	21/03/2020 15:44:37
+#+ Editado:	21/03/2020 18:56:57
 
 
 #* Variables
 #* $1 : ligazón
 #* $2 : título
 #* $3 : autor
-#* $4 : ogg	[opcional DESACTIVADA]
+#* $4 : extensión dinámica [OPCIONAL]
 
-# por se non metes argumentos
-[ $# -eq 0 ] && exit 0
+SEPARADOR='~'
+EXTENSION='ogg' # mp4 flv ogg webm mkv avi
 
-# se metemos -a como primeiro elemento mensaxe de axuda e pirarse
-[ $1 == "-a" ] && { printf "Opcións: \n";
-		    printf "\t -a : Axuda, mostra esta mensaxe.\n";
-		    printf "Orde dos elementos:\n";
-		    printf "\t LIGAZÓN TÍTULO AUTOR\n";
-		     exit 1;
-	    	   }
+# se non metes os argumentos que son mostra a axuda
+[ $# -lt 3 ] && {
+		 printf "Orde dos elementos a incluir:\n";
+                 printf "Ligazón Título Autor [Extensión]\n";
+                 exit 1;
+		}
 
-# mira o count das variables, se é menor a 3 decimos que meta tódalas variables
-[ $# -lt 3 ] && { printf "Pon tódalas opcións. Para axuda -a.\n";
-		  exit 0;
-	  	}
+# CONVERSIÓN SEMPRE COA MESMA EXTENSIÓN
+# eu quero todos baixados así pero para que se poda editar fácil
+youtube-dl -x -o "$2 $SEPARADOR $3.(ext)s" $1 --recode-video $EXTENSION
 
-# eu quero todos baixados así pero para que se poda editar facil
-youtube-dl -x -o "$2 ~ $3.(ext)s" $1 --recode-video ogg
-
-# se metes 4 elemtos
-#[ $# -eq 4 ] && { [ $4 == "-ogg" ] && youtube-dl -x -o "$2 ~ $3.(ext)s" $1 --recode-video ogg; exit 1; }
-#if [ $# -eq 4 ]; then
-	# mira que sexa ogg o último, se o é baixaoo como ogg senón feira
-#	[ $4 == "-ogg" ] && youtube-dl -x -o "$2 ~ $3.(ext)s" $1 --recode-video ogg
-#	exit 0
-#fi
-
-# se non ten 4 eltos baixaoo feira 
-#youtube-dl -x -o "$2 ~ $3.(ext)s" $1
+# CONVERSIÓN COA EXTENSIÓN DADA POR COMANDOS
+# se metes 4 elemtos o 4º é a extensión que queres e cambiacho a esa, senón baixa sen conversión
+#[ $# -eq 4 ] && { 
+#		youtube-dl -x -o "$2 $SEPARADOR $3.(ext)s" $1 --recode-video $4;
+#		exit 1; 
+#		} || 
+#		youtube-dl -x -o "$2 $SEPARADOR $3.(ext)s" $1
