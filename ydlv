@@ -1,0 +1,33 @@
+#! /bin/sh
+#+ Autor:	Ran#
+#+ Creado:	21/03/2020 20:02:26
+#+ Editado:	21/03/2020 20:06:00
+
+
+#* Variables
+#* $1 : ligazón
+#* $2 : título
+#* $3 : autor
+#* $4 : extensión dinámica [OPCIONAL]
+
+SEPARADOR='~'
+EXTENSION='mkv' # mp4 flv ogg webm mkv avi
+
+# se non metes os argumentos que son mostra a axuda
+[ $# -lt 3 ] && {
+		 printf "Orde dos elementos a incluir:\n";
+                 printf "Ligazón Info Título [Extensión]\n";
+                 exit 1;
+		}
+
+# CONVERSIÓN ESTÁTICA, DADA POLA VARIABLE. SEMPRE A MESMA.
+# eu quero todos baixados así pero para que se poda editar fácil
+youtube-dl -o "$2 $SEPARADOR $3.(ext)s" $1 --recode-video $EXTENSION
+
+# CONVERSIÓN DINÁMICA, COA EXTENSIÓN DADA POR COMANDOS
+# se metes 4 elemtos o 4º é a extensión que queres e cambiacho a esa, senón baixa sen conversión
+#[ $# -eq 4 ] && { 
+#		youtube-dl -o "$2 $SEPARADOR $3.(ext)s" $1 --recode-video $4;
+#		exit 1; 
+#		} || 
+#		youtube-dl -o "$2 $SEPARADOR $3.(ext)s" $1
