@@ -1,13 +1,13 @@
 #! /bin/sh
 #+ Autor:	Ran#
 #+ Creado:	21/03/2020 12:55:47
-#+ Editado:	21/03/2020 18:58:22
+#+ Editado:	22/03/2020 17:35:01
 
 
 #* Variables
 #* $1 : ligazón
-#* $2 : título
-#* $3 : autor
+#* $2 : autor
+#* $3 : título
 #* $4 : extensión dinámica [OPCIONAL]
 
 SEPARADOR='~'
@@ -16,7 +16,7 @@ EXTENSION='ogg' # mp4 flv ogg webm mkv avi
 # se non metes os argumentos que son mostra a axuda
 [ $# -lt 3 ] && {
 		 printf "Orde dos elementos a incluir:\n";
-                 printf "Ligazón Título Autor [Extensión]\n";
+                 printf "Ligazón Autor Título [Extensión]\n";
                  exit 1;
 		}
 
