@@ -1,6 +1,14 @@
 #! /bin/sh
 #+ Autor:	Ran#
-#+ Creado:	07/06/2019 20:23:40
-#+ Editado:	10/06/2019 17:28:10
+#+ Creado:	08/06/2019 13:16:09
+#+ Editado:	07/03/2020 22:50:55
 
-grub-mkconfig -o /boot/grub/grub.cfg
+# -p fai que non saia erro se xa existe e crea todas as carpetas pai precisas se non existen
+mkdir -p ~/Programas
+
+git clone https://aur.archlinux.org/"$1".git ~/Programas/"$1"
+
+#chown $USER:$USER ~/Software/"$1"
+cd ~/Programas/"$1"
+
+makepkg -sirc --noconfirm
