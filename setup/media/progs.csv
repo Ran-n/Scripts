@@ -1,7 +1,7 @@
 #!
 #+ Autor:	Ran#
 #+ Creado:	15/03/2020 14:37:28
-#+ Editado:	18/03/2020 19:08:27
+#+ Editado:	23/03/2020 21:36:39
 
 # TAGS:
 # 		> Transplataforma.
@@ -20,4 +20,5 @@ debian,rename,comando que permite facer renomeamentos en masa
 arch,mkvtoolnix-cli,ferramentas de edición de ficheiros mkv
 arch,mkvtoolnix-gui,ferramentas de edición de ficheiros mkv
 ,erlang,linguaxe de programación e interprete
+,dia,programa de creación de esquemas, diagramas, umls, etc
 
