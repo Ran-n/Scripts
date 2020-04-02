@@ -13,13 +13,13 @@ mkdir -p ~/Documentos
 mv ~/Downloads ~/Descargas 2> /dev/null
 mkdir -p ~/Descargas
 
-mv ~/Music ~/Musica 2> /dev/null
+mv ~/Music ~/Música 2> /dev/null
 mkdir -p ~/Musica
 
 mv ~/Pictures ~/Imaxes 2> /dev/null
 mkdir -p ~/Imaxes
 
-mv ~/Public ~/Publico 2> /dev/null
+mv ~/Public ~/Público 2> /dev/null
 mkdir -p ~/Publico
 
 mv ~/Software ~/Programas 2> /dev/null
