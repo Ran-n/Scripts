@@ -15,10 +15,21 @@
 ,sxiv,visor de fotos
 ,mpv,visor multimedia
 ,youtube-dl,descargador de vídeos
+,erlang,linguaxe de programación e interprete
+,dia,programa de creación de esquemas, diagramas, umls, etc
+,ffmpeg,programa para a edición de vídeo
+,neofetch,mostra de forma moi agradable información sobre o sistema
+,slock,candea o ordenador e permite desencadealo có constrasinal
+,dos2unix,elimina os caracteres raros ao final de linha por culpa de w2 (^M)
+,dosfstools,ferramentas para aceder a sistemas de ficheiros tipo msdos
+,libnotify,permite notificacións de escritorio
+,xwallpaper,pon o fondo de escritorio
+,xclip,permite copiar pegar texto
+,zathura,visor de pdfs
+,zathura-pdf-mupdf,permite compatibilidade dos mupdf pdf con zathura
+,poppler,manipula pdfs e dalles funcións
 arch,perl-rename,comando que permite facer renomeamentos en masa
 debian,rename,comando que permite facer renomeamentos en masa
 arch,mkvtoolnix-cli,ferramentas de edición de ficheiros mkv
 arch,mkvtoolnix-gui,ferramentas de edición de ficheiros mkv
-,erlang,linguaxe de programación e interprete
-,dia,programa de creación de esquemas, diagramas, umls, etc
 

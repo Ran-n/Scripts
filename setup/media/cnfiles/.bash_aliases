@@ -35,19 +35,19 @@ alias md='metadata'
 
 ## cds no sistema
 ### Carpetas base
-alias cddocs='cd ~/Documentos; ls'
-alias cddes='cd ~/Descargas; ls'
-alias cdmus='cd ~/Musica; ls'
-alias cdmusa='cd ~/Musica/Audio; ls'
-alias cdmusv='cd ~/Musica/VideoClips; ls'
-alias cdfotos='cd ~/Imaxes; ls'
-alias cdvid='cd ~/Videos; ls'
-alias cdsw='cd ~/Programas; ls'
+alias cdocs='cd ~/Documentos; ls'
+alias cdes='cd ~/Descargas; ls'
+alias cmus='cd ~/Música; ls'
+alias cmusa='cd ~/Música/Audio; ls'
+alias cmusv='cd ~/Música/VideoClips; ls'
+alias cfot='cd ~/Imaxes; ls'
+alias cvid='cd ~/Vídeos; ls'
+alias csw='cd ~/Programas; ls'
 
-alias scripts='cd ~/Programas/scripts; ls'
+alias cscripts='cd ~/Programas/scripts; ls'
 alias sc='cd ~/Programas/scripts; ls'
-alias tutos='cd ~/Programas/tutos; ls'
-alias cdledo='cd ~/Programas/ledo; ls'
+alias ctutos='cd ~/Programas/tutos; ls'
+alias cledo='cd ~/Programas/ledo; ls'
 
 alias ulb="cd /usr/local/bin; ls"
 
@@ -61,10 +61,10 @@ alias dtorrent='cd ~/Descargas/Torrente; ls'
 ### clase
 alias fric='cd ~/Documentos/FrIC; ls'
 alias cdfric='cd ~/Documentos/FrIC; ls'
-alias cdcp='cd ~/Documentos/FrIC/cp; ls'
-alias cdid='cd ~/Documentos/FrIC/id; ls'
-alias cdabd='cd ~/Documentos/FrIC/abd; ls'
-alias cdcxt='cd ~/Documentos/FrIC/cxt; ls'
-alias cdtfg='cd ~/Documentos/FrIC/tfg; ls'
+alias ficcp='cd ~/Documentos/FrIC/cp; ls'
+alias ficid='cd ~/Documentos/FrIC/id; ls'
+alias ficabd='cd ~/Documentos/FrIC/abd; ls'
+alias ficcxt='cd ~/Documentos/FrIC/cxt; ls'
+alias fictfg='cd ~/Documentos/FrIC/tfg; ls'
 
 alias toxtrac='conda activate toxtrac; ls'
