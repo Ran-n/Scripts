@@ -28,6 +28,7 @@
 ,zathura,visor de pdfs
 ,zathura-pdf-mupdf,permite compatibilidade dos mupdf pdf con zathura
 ,poppler,manipula pdfs e dalles funcións
+,telegram-desktop,aplicación de mensaxería instantánea na súa versión de escritorio
 arch,perl-rename,comando que permite facer renomeamentos en masa
 debian,rename,comando que permite facer renomeamentos en masa
 arch,mkvtoolnix-cli,ferramentas de edición de ficheiros mkv
