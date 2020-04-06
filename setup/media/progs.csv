@@ -9,6 +9,7 @@
 # aur		> Baixalo do Arch User Repository.
 # debian	> Exclusivo dos tipo Debian.
 # github 	> Baixalo de Github.
+# https		> Baixalo dunha páxina web
 
 #TAG,NOME,DESC
 ,pandoc,conversor entre tipos de documentos (md html latex etc)
@@ -29,6 +30,7 @@
 ,zathura-pdf-mupdf,permite compatibilidade dos mupdf pdf con zathura
 ,poppler,manipula pdfs e dalles funcións
 ,telegram-desktop,aplicación de mensaxería instantánea na súa versión de escritorio
+,sqlitebrowser,editor gráfico de bases de datos sql lite
 arch,perl-rename,comando que permite facer renomeamentos en masa
 debian,rename,comando que permite facer renomeamentos en masa
 arch,mkvtoolnix-cli,ferramentas de edición de ficheiros mkv
