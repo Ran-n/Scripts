@@ -2,6 +2,8 @@
 #+ Autor:	Ran#
 #+ Creado:	2019
 #+ Editado:	07/03/2020 23:13:40
+#+ Obsoleto:	06/04/2020 23:40:26
+#+ Existe un comando manexable por terminal chamado speedtest-cli
 
 pip install --user speedtest-cli 2> /dev/null
 
