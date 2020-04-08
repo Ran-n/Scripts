@@ -34,6 +34,7 @@
 ,speedtest-cli,ferramenta de comando para speedtest.net para facer o control da velocidade da rede 
 ,jq,procesador e embelecedor do formato json en linha de comandos
 ,xorg-xdpyinfo,ferramenta de mostreo de información
+,ranger,manexador de ficheiros visual
 arch,perl-rename,comando que permite facer renomeamentos en masa
 debian,rename,comando que permite facer renomeamentos en masa
 arch,mkvtoolnix-cli,ferramentas de edición de ficheiros mkv
