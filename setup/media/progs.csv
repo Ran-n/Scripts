@@ -44,3 +44,6 @@ arch,mkvtoolnix-cli,ferramentas de edición de ficheiros mkv
 arch,mkvtoolnix-gui,ferramentas de edición de ficheiros mkv
 arch,p7zip,ferramenta para a compresión e decompresión de ficheiros en diferentes extensións (zip, 7z, etc)
 aur,rambox-bin,plataforma foss para varios tipos de programas
+debian,texlive-full,editor de texto LaTeX
+arch,texlive-most,editor de texto de LaTeX
+arch,texlive-lang,paquete para LaTeX de soporte de idiomas
