@@ -38,6 +38,7 @@
 ,noto-fonts-emojis,fonte de emojis
 ,unicode-emoji,fonte de emojis
 ,gimp,editor de fotos
+,alacritty,emulador de terminal que usa GPU para ir rápido
 arch,perl-rename,comando que permite facer renomeamentos en masa
 debian,rename,comando que permite facer renomeamentos en masa
 arch,mkvtoolnix-cli,ferramentas de edición de ficheiros mkv
