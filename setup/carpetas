@@ -24,4 +24,8 @@ mkdir -p ~/Publico
 
 mv ~/Software ~/Programas 2> /dev/null
 mkdir -p ~/Programas
+
+mv ~/Videos ~/Vídeos 2> /dev/null
+mkdir -p ~/Vídeos
+
 printf "OK\n"

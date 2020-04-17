@@ -30,6 +30,9 @@ alias ydl='youtube-dl'
 alias condad='conda deactivate'
 alias condaa='conda activate; ls'
 
+alias rmzip='rm *zip*'
+alias rm7z='rm *7z*'
+
 ### programas e scripts propios
 alias md='metadata'
 
