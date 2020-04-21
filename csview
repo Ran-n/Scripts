@@ -1,0 +1,6 @@
+#! /bin/sh
+#+ Autor:	Ran#
+#+ Creado:	21/04/2020 16:10:29
+#+ Editado:	21/04/2020 16:10:29
+
+column -s, -t < $1 | less -#2 -N -S

@@ -8,7 +8,6 @@
 
 ----
 
-No english version atm.
 ## getadmins
 
 ## metadata
@@ -20,6 +19,9 @@ No english version atm.
 ## update-grub
 
 ## pacma
+
+## csview
+Pretty print for csv files.
 
 ----
 
@@ -44,6 +46,5 @@ script para actualizar os cambios feitos na configuración do grub. É útil par
 arch/pacma  
 Script para instalar do repositorio AUR en Arch
 
-## vel
-dame a velocidade da conexión a internet  
-gives me the velocity of the internet connection
+## csview
+Permite ver os contidos dun csv de forma bonita.
