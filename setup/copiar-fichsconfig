@@ -1,0 +1,14 @@
+#! /bin/sh
+#+ Autor:	Ran#
+#+ Creado:	22/04/2020 00:23:18
+#+ Editado:	22/04/2020 00:32:36
+
+# Script que copia of ficheiros de configuración da máquina na que estou
+
+printf "Copiando os ficheiros de configuración...\t"
+
+cp -r ~/.vim/. setup/media/cnfiles/.vim/
+cp -r ~/.config/nvim/. setup/media/cnfiles/.config/nvim/
+
+#cp -r setup/media/cnfiles/. ~
+printf "OK\n"

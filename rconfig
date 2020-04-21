@@ -13,7 +13,7 @@ if [ $1 = "pega" ]; then
 # modificamos o nome das carpetas
 ./setup/carpetas
 
-#./setup/cp-fichsconfig $1
+# pegamos os ficheiros de configuración dende o repositorio
 ./setup/pegar-fichsconfig
 
 # copiamos os scripts
@@ -22,5 +22,6 @@ if [ $1 = "pega" ]; then
 sudo ./setup/pegar-scripts
 
 elif [ $1 = "copia" ]; then
-	echo copia
+	# copiamos os ficheiros de configuración ao repositorio
+	./setup/copiar-fichsconfig
 fi

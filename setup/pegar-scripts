@@ -1,20 +1,20 @@
 #! /bin/sh
 #+ Autor:	Ran#
 #+ Creado:	08/03/2020 00:07:50
-#+ Editado:	23/03/2020 19:27:11
+#+ Editado:	22/04/2020 00:24:54
 
 #* Script para copiar os scripts básicos directamente a /usr/local/bin
 
 DISTRO=$(lsb_release -a | sed -n '2,+0p' | cut -d: -f2 | tr -ds '\t' '')
 
-printf "Copiando os scripts básicos a /usr/local/bin...\t"
+printf "Pegando os scripts básicos a /usr/local/bin...\t"
 cp ydlv ydla metadata rmswaps 2ogg 2pdf gc gdf gl pomodoro.py aleatorio conversor copia csview /usr/local/bin
 
 printf "OK\n"
 
 case $DISTRO in
 	ManjaroLinux)
-		printf "Copiando scripts básicos para Arch Linux...\t"
+		printf "Pegando scripts básicos para Arch Linux...\t"
 		cp arch/pacma arch/update-grub /usr/local/bin
 		printf "OK\n"
 		;;

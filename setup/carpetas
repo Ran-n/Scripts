@@ -1,9 +1,10 @@
 #! /bin/sh
 #+ Autor:	Ran#
 #+ Creado:	08/03/2020 13:31:26
-#+ Editado:	13/03/2020 07:55:42
+#+ Editado:	22/04/2020 00:24:50
 
 printf "Creando ou modificando os nomes das carpetas...\t"
+
 mv ~/Desktop ~/Escritorio 2> /dev/null
 mkdir -p ~/Escritorio
 
