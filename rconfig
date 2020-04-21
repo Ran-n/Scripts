@@ -1,0 +1,26 @@
+#! /bin/sh
+#+ Autor:	Ran#
+#+ Creado:	08/03/2020 00:13:08
+#+ Editado:	22/04/2020 00:22:00
+
+# se non meten variable pois pon mensaxe e sae
+if [ -z $1 ]; then
+	echo copias ou pegas ficheiros?
+	exit 1
+fi
+
+if [ $1 = "pega" ]; then
+# modificamos o nome das carpetas
+./setup/carpetas
+
+#./setup/cp-fichsconfig $1
+./setup/pegar-fichsconfig
+
+# copiamos os scripts
+#./cp-scripts
+# é mala práctica poñer sudo. Executar o xeral como sudo de comentar a liña.
+sudo ./setup/pegar-scripts
+
+elif [ $1 = "copia" ]; then
+	echo copia
+fi
