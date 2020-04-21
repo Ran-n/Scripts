@@ -1,6 +1,22 @@
 #! /bin/sh
 #+ Autor:	Ran#
 #+ Creado:	21/04/2020 16:10:29
-#+ Editado:	21/04/2020 16:10:29
+#+ Editado:	21/04/2020 16:26:55
 
-column -s, -t < $1 | less -#2 -N -S
+
+# $1 > Ficheiro a mostrar
+# $2 > Separador do csv, por defecto ,
+
+if [ -z $1 ]; then
+	echo "Falta un arquivo"
+	exit 1
+fi
+
+# se non hai segunda variable
+if [ -z $2 ]; then
+	column -s, -t < $1 | less -#2 -N -S
+
+# se hai segunda varible
+else
+	column -s$2 -t < $1 | less -#2 -N -S
+fi
