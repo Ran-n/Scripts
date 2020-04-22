@@ -1,7 +1,7 @@
 #! /bin/sh
 #+ Autor:	Ran#
 #+ Creado:	18/03/2020 00:29:44
-#+ Editado:	18/03/2020 12:55:57
+#+ Editado:	22/04/2020 19:33:25
 
 #* Variables:
 #* $1 : Tipo de conversión a realizar.
@@ -9,16 +9,26 @@
 
 case $1 in
 # de mp4<>mkv son wrappers sobre o mesmo contido. Recodificar faríanos perder calidade.
-	'mp4>mkv')
-		for i in *.mp4; do
-    			ffmpeg -i "$i" -codec copy "${i%.*}.mkv"
-		done
+	'mp4mkv')
+		if [ -z $2 ]; then
+			for i in *.mp4; do
+    				ffmpeg -i "$i" -codec copy "${i%.*}.mkv"
+			done
+		else
+			ffmpeg -i "${2%.*}.mp4" -codec copy "${2%.*}.mkv" 
+		fi
 		;;
 
-	'mkv>mp4')
+	'mkvmp4')
 		for i in *.mkv; do
     			ffmpeg -i "$i" -codec copy "${i%.*}.mp4"
 		done
+		;;
+	'avimkv')
+		ffmpeg -y -i "${2%.*}.avi" "${2%.*}.mkv" 
+		;;
+	'mkvavi')
+		ffmpeg -y -i "${2%.*}.mkv" "${2%.*}.avi" 
 		;;
 	*)
 		echo 'Conversións soportadas:'
