@@ -9,6 +9,8 @@ printf "Copiando os ficheiros de configuración...\t"
 
 cp -r ~/.vim/. setup/media/cnfiles/.vim/
 cp -r ~/.config/nvim/. setup/media/cnfiles/.config/nvim/
+cp -r ~/.bashrc setup/media/cnfiles/
+cp -r ~/.bash_aliases setup/media/cnfiles/
 
 #cp -r setup/media/cnfiles/. ~
 printf "OK\n"

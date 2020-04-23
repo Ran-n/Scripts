@@ -55,15 +55,15 @@ alias cledo='cd ~/Programas/ledo; ls'
 alias ulb="cd /usr/local/bin; ls"
 
 # Carpetas de Descargas específicas
-alias dtelegram='cd ~/Descargas/Telegram\ Desktop; ls'
-alias dtele='cd ~/Descargas/Telegram\ Desktop; ls'
-alias dbrave='cd ~/Descargas/Brave; ls'
-alias dtorrente='cd ~/Descargas/Torrente; ls'
-alias dtorrent='cd ~/Descargas/Torrente; ls'
+alias ctelegram='cd ~/Descargas/Telegram\ Desktop; ls'
+alias ctele='cd ~/Descargas/Telegram\ Desktop; ls'
+alias cbrave='cd ~/Descargas/Brave; ls'
+alias ctorrente='cd ~/Descargas/Torrente; ls'
+alias ctorrent='cd ~/Descargas/Torrente; ls'
 
 ### clase
 alias fric='cd ~/Documentos/FrIC; ls'
-alias cdfric='cd ~/Documentos/FrIC; ls'
+alias cfric='cd ~/Documentos/FrIC; ls'
 alias ficcp='cd ~/Documentos/FrIC/cp; ls'
 alias ficid='cd ~/Documentos/FrIC/id; ls'
 alias ficabd='cd ~/Documentos/FrIC/abd; ls'
