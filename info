@@ -1,0 +1,12 @@
+#! /bin/sh
+#+ Autor:	Ran#
+#+ Creado:	28/04/2020 16:15:28
+#+ Editado:	28/04/2020 16:23:58
+
+case $1 in
+	s)
+		ffprobe -v error -show_entries format=duration   -of default=noprint_wrappers=1:nokey=1 "$2" | cut -d. -f1
+		;;
+	*)
+		echo s para mostrar segundos
+esac
