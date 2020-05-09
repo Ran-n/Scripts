@@ -1,0 +1,15 @@
+#! /bin/sh
+#+ Autor:	Ran#
+#+ Creado:	09/05/2020 14:40:32
+#+ Editado:	09/05/2020 14:43:47
+
+cd "/run/user/1000/gvfs/mtp:host=Xiaomi_Redmi_Note_8_Pro_nbjbkjss7laebqqo/Armazen. interno partilhado"
+
+case $1 in
+	ci)
+		echo copiar imaxes
+		;;
+	*)
+		echo ci para copiar imaxes
+	
+esac
