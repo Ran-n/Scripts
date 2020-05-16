@@ -5,7 +5,12 @@
 
 case $1 in
 	s)
-		ffprobe -v error -show_entries format=duration   -of default=noprint_wrappers=1:nokey=1 "$2" | cut -d. -f1
+		# achamos o número de segundos
+		SEGS=$(ffprobe -v error -show_entries format=duration   -of default=noprint_wrappers=1:nokey=1 "$2" | cut -d. -f1)
+		# imprimimolo en pantalla
+		echo $SEGS
+		# copiamolo no portapapeis
+		copia $SEGS
 		;;
 	*)
 		echo s para mostrar segundos
