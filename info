@@ -6,11 +6,19 @@
 case $1 in
 	s)
 		# achamos o número de segundos
-		SEGS=$(ffprobe -v error -show_entries format=duration   -of default=noprint_wrappers=1:nokey=1 "$2" | cut -d. -f1)
+		SEGS=$(ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 "$2" | cut -d. -f1)
 		# imprimimolo en pantalla
 		echo $SEGS
 		# copiamolo no portapapeis
 		copia $SEGS
+		;;
+	b)
+		# acamos os bytes do ficheiro
+		BYTES=$(du -b "$2" | awk '{ print $1 }')
+		# imprimimolo por pantalla
+		echo $BYTES
+		# copiamolo no portapapeis
+		copia $BYTES
 		;;
 	*)
 		echo s para mostrar segundos
