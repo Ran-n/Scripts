@@ -1,0 +1,59 @@
+#! /bin/sh
+#+ Autor:	Ran#
+#+ Creado:	21/03/2020 20:02:26
+#+ Editado:	27/05/2020 19:27:09
+
+#--------------------------------------------
+#* Variables
+#* $1 : ligazón
+#* $2 : título
+#* $3 : autor
+#* $4 : discriminar entre audio e video
+#* $5 : extensión dinámica [OPCIONAL]
+#--------------------------------------------
+
+#audios disponhibles en --audio-format
+AUDIOFORMAT='best|aac|flac|mp3|m4a|opus|vorbis|wav'
+
+SEPARADOR='~'
+VIDEO='mkv' # mp4 flv ogg webm mkv avi
+AUDIO='ogg' # best mp4 flv ogg webm mkv avi aac flac mp3 m4a opus vorbis wav
+
+# se pos ? mostrache a axuda
+[ $1 = '?' ] && {
+	printf "\n>Orde dos elementos a incluir:\n";
+ 	printf "Ligazón | Info/Autor | Título | Audio(a)/Video(v) | [Extensión]\n";
+	printf "\n>Opcións de extensións:\n"
+	printf "Video: mp4 flv ogg webm mkv avi\nAudio: best mp4 flv ogg webm mkv avi aac flac mp3 m4a opus vorbis wav\n";
+	exit 1;
+	}
+
+# se non metes os argumentos que son mostra a axuda
+[ $# -lt 4 ] && {
+		 printf "\nOrde dos elementos a incluir:\n";
+		 printf "Ligazón | Info ou Autor | Título | Audio(a) ou Video(v) | [Extensión]\n";
+                 exit 1;
+		}
+
+# se metes un quinto elemento será o que se ponha coma extensión a usar
+[ $# -eq 5 ] && VIDEO=$5 && AUDIO=$5
+
+# miramos se é video ou audio o que queremos
+# VIDEO
+if [ $4 = "v" ]; then
+	youtube-dl --add-metadata -i -o "$2 $SEPARADOR $3" $1 --recode-video $VIDEO
+# AUDIO
+elif [ $4 = "a" ]; then
+	# se a extensión está dentro de AUDIOFORMAT usamos este primeiro que usa a opción --audio-format 
+	if [[ "$5" =~ ^($AUDIOFORMAT)$ ]]; then
+		youtube-dl --add-metadata -i -x -f bestaudio/best -o "$2 $SEPARADOR $3.(ext)s" $1 --audio-format $AUDIO --audio-quality 9
+	
+	# se non usamos a opción --recode-video para podermos utilizar o resto de extensións
+	else
+		youtube-dl --add-metadata -i -x -f bestaudio/best -o "$2 $SEPARADOR $3.(ext)s" $1 --recode-video $AUDIO --audio-quality 9
+	fi
+# se metes algo que non sexa nin v nin a pois peta e sae
+else
+	echo "Ou (a)udio ou (v)ideo"
+	exit 1
+fi

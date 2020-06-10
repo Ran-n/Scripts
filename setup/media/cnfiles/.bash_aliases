@@ -25,7 +25,6 @@ alias nv='nvim'
 alias snv='sudo nvim'
 alias xclip='xargs echo -n | xclip -selection clipboard'
 alias 7ze='7z e'
-alias ydl='youtube-dl'
 alias locate='sudo updatedb; locate'
 
 alias condad='conda deactivate'
