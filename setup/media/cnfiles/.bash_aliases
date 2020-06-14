@@ -16,6 +16,9 @@ alias cpwd='pwd | xargs echo -n | xclip -selection clipboard'
 #alias proba="f() { echo "$a" }"
 alias rbash='source ~/.bashrc'
 
+### pacman
+alias update='sudo pacman -Syu --noconfirm'
+
 ## comandos programas
 ### programas externos
 alias r='ranger'
