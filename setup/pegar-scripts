@@ -8,7 +8,7 @@
 DISTRO=$(lsb_release -a | sed -n '2,+0p' | cut -d: -f2 | tr -ds '\t' '')
 
 printf "Pegando os scripts básicos a /usr/local/bin...\t"
-cp ydl metadata rmswaps 2ogg 2pdf gc gdf gl pomodoro.py aleatorio conversor copia csview info gfolder wifipass teras /usr/local/bin
+cp ydl metadata rmswaps 2ogg 2pdf gc gdf gl pomodoro.py aleatorio conversor copia csview info gfolder wifipass teras crono /usr/local/bin
 
 printf "OK\n"
 
