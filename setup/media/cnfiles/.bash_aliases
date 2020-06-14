@@ -1,7 +1,7 @@
 #! ALIASES
 #+ Autor:	Ran#
 #+ Creado:	03/2020
-#+ Editado:	16/03/2020 15:37:02
+#+ Editado:	14/06/2020 14:33:33
 
 ## para poder usar os alias co sudo
 sudo() { if alias "$1" &> /dev/null ; then $(type "$1" | sed -E 's/^.*`(.*).$/\1/') "${@:2}" ; else command sudo $@ ; fi }
@@ -35,6 +35,9 @@ alias rm7z='rm *7z*'
 
 ### programas e scripts propios
 alias md='metadata'
+alias mdm='metadata -m'
+alias mde='metadata -e'
+alias mdc='metadata -c'
 
 ## cds no sistema
 ### Carpetas base
