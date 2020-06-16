@@ -37,4 +37,7 @@ else
 fi
 
 # mostrámoslle o constrasinal da rede en texto plano
-copia $(sudo cat /etc/NetworkManager/system-connections/"$REDE".nmconnection | grep ^psk | cut -d= -f2)
+contrasinal=$(sudo cat /etc/NetworkManager/system-connections/"$REDE".nmconnection | grep ^psk | cut -d= -f2)
+
+echo $contrasinal
+copia $contrasinal
