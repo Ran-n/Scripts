@@ -8,19 +8,33 @@
 #* $1 :	Nome da rede [OPCIONAL]
 #------------------------------------
 
-# se nos mete un argumento xa suponhemos que mete o nome da rede ben posto
-[ -z "$1" ] || { 
-	sudo cat /etc/NetworkManager/system-connections/"$1".nmconnection | grep ^psk | cut -d= -f2;
-	# saímos sen erro
-	exit 0;
-}
+REDE='Nome'
 
-# mostramos todas as redes gardadas
-echo 'Redes:'
-sudo ls /etc/NetworkManager/system-connections/ | cut -d. -f1
-echo ''
-# dialogo para que nos pegue o nome da rede que queremos
-read -p "Pega o nome da rede que queres: " WIFI
-echo ''
+# se mete un -a e que quere a rede actual
+if [ "$1" = "-m" ]; then
+	# mostramos todas as redes gardadas
+	echo 'Redes:'
+	sudo ls /etc/NetworkManager/system-connections/ | cut -d. -f1
+	echo ''
+	# dialogo para que nos pegue o nome da rede que queremos
+	read -p "Pega o nome da rede que queres tal cal está: " REDE
+	echo ''
+
+# se nos mete un argumento xa suponhemos que mete o nome da rede ben posto
+elif [ "$1" = "-r" ]; then
+	REDE="$2"
+elif [ "$1" = "?" ]; then
+	echo ''
+	echo "Información:"
+	echo "-----------------------------------"
+	echo " ? -> axuda"
+	echo "-m -> mostra todos os nomes posibles"
+	echo "-r -> nome da rede por parámetro"
+	echo "-----------------------------------"
+	exit 0
+else
+	REDE="$(nmcli | sed 1q | awk -F 'to ' '{print $2}')"
+fi
+
 # mostrámoslle o constrasinal da rede en texto plano
-sudo cat /etc/NetworkManager/system-connections/"$WIFI".nmconnection | grep ^psk | cut -d= -f2
+sudo cat /etc/NetworkManager/system-connections/"$REDE".nmconnection | grep ^psk | cut -d= -f2
