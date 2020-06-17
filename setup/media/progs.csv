@@ -42,6 +42,7 @@
 ,cmatrix,programa que pon na terminal un fondo basado na peli matrix
 ,posterazor,corta unha imaxe ou pdf nas dimensións desexadas (pe: mural con D4)
 ,mlocate,comando locate e updatedb
+,tree,programa para ver a estrutura de carpetas
 arch,perl-rename,comando que permite facer renomeamentos en masa
 debian,rename,comando que permite facer renomeamentos en masa
 arch,mkvtoolnix-cli,ferramentas de edición de ficheiros mkv
