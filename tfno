@@ -1,15 +1,49 @@
 #! /bin/sh
 #+ Autor:	Ran#
 #+ Creado:	09/05/2020 14:40:32
-#+ Editado:	09/05/2020 14:43:47
+#+ Editado:	17/06/2020 17:16:20
 
-cd "/run/user/1000/gvfs/mtp:host=Xiaomi_Redmi_Note_8_Pro_nbjbkjss7laebqqo/Armazen. interno partilhado"
+#--------------------------------------
+# VARIABLES:
+# [$1] -> Número de dispositivo (por defecto 1)
+#--------------------------------------
+
+CARPETA=~/.cache/tfno/
+NUMERO=1 
+OPCION="$2"
+
+
+# creamos a carpeta
+mkdir "$CARPETA"
 
 case $1 in
-	ci)
-		echo copiar imaxes
+	-n)
+		# eliximos que dispositivo queremos (simple-mtpfs -l) 
+		NUMERO="$2"
+		;;
+	-a)
+		OPCION="$4"
 		;;
 	*)
+		echo -n para o número
+		echo -a para a acción
 		echo ci para copiar imaxes
+		;;
 	
 esac
+
+# facemos o mount do teléfono cos datos proporcionados
+simple-mtpfs --device $NUMERO $CARPETA
+
+case $OPCION in
+	ci)
+		echo ci
+		;;
+	*)
+		echo mal
+		;;
+esac
+
+
+fusermount -u $CARPETA
+rmdir $CARPETA
