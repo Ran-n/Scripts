@@ -8,13 +8,13 @@
 	usrep=$(echo "$1"|cut -d'/' -f 4-5)
 	fich=$(echo "$1"|cut -d'/' -f 7-)
 
-	wget -0 https://raw.githubusercontent.com/$usrep/$fich
+	wget -N https://raw.githubusercontent.com/$usrep/$fich 
 	exit 0
 }
 
 # senón ten que meter Usuario Repo Fich nesa orde 
 [ $# -eq 3 ] && {
-	wget https://raw.githubusercontent.com/"$1"/"$2"/master/"$3"
+	wget -N https://raw.githubusercontent.com/"$1"/"$2"/master/"$3"
 	exit 0
 }
 
