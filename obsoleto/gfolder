@@ -2,6 +2,8 @@
 #+ Autor:	Ran#
 #+ Creado:	13/06/2020 22:36:20
 #+ Editado:	16/06/2020 23:09:58
+#+ Obsoleto:	19/06/2020 22:53:04
+#+ Non fai falla script para algo que nos fai un alias
 
 # dalle a volta ao pwd, parte por / e colle o primeiro campo e desfai o rev
 pwd | rev | cut -d/ -f1 | rev | copia
