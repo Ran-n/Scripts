@@ -1,7 +1,7 @@
 #! /bin/sh
 #+ Autor:	Ran#
 #+ Creado:	09/07/2019 19:47:42
-#+ Editado:	19/06/2020 22:42:34
+#+ Editado:	20/06/2020 12:58:32
 
 # se mete só unha entrada -> sacamos datos da ligazón
 [ $# -eq 1 ] && {
