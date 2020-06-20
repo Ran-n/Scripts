@@ -1,17 +1,24 @@
 #! /bin/bash
 #+ Autor:	Ran#
 #+ Creado:	05/06/2019
-#+ Editado:	18/03/2020 12:47:27
+#+ Editado:	20/06/2020 14:10:44
+
+#* Variables
+#* $1 	: Tipo de acción a realizar
+#* [$2] : Nome do ficheiro a editar
 
 data=$(date +%d/%m/%Y\ %R:%S)
 
+# miramos por stdin e por parámetros o nome. Prioriza os parámetros de haber ambos
+[ -z "$2" ] && fich=$(cat -) || fich="$2"
+
 case $1 in
 	"-e"|"--editado")
-		sed -i "s|^#+ Editado:.*|#+ Editado:\t$data|" $2
+		sed -i "s|^#+ Editado:.*|#+ Editado:\t$data|" $fich
 		;;
 
 	"-c"|"--creado")
-		sed -i "s|^#!\(.*\)|#!\1\n#+ Autor:\tRan#\n#+ Creado:\t$data\n#+ Editado:\t$data|" $2
+		sed -i "s|^#!\(.*\)|#!\1\n#+ Autor:\tRan#\n#+ Creado:\t$data\n#+ Editado:\t$data|" $fich
 		;;
 
 	"-a"|"--axuda")
@@ -23,11 +30,11 @@ case $1 in
 		;;
 
 	"-m"|"--mostrarla")
-		grep "^#+" $2
+		grep "^#+" $fich
 		;;
 	
 	"-s"|"--suprimir")
-		sed -i "/^#+.*/d" $2
+		sed -i "/^#+.*/d" $fich
 		;;
 
 	*)
