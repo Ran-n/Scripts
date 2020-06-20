@@ -1,7 +1,7 @@
 #! ALIASES
 #+ Autor:	Ran#
 #+ Creado:	03/2020
-#+ Editado:	14/06/2020 14:33:33
+#+ Editado:	19/06/2020 22:55:28
 
 ## para poder usar os alias co sudo
 sudo() { if alias "$1" &> /dev/null ; then $(type "$1" | sed -E 's/^.*`(.*).$/\1/') "${@:2}" ; else command sudo $@ ; fi }
@@ -12,7 +12,8 @@ alias lsa='ls -a'
 alias lsl='ls -l'
 alias lsla='ls -la'
 
-alias cpwd='pwd | xargs echo -n | xclip -selection clipboard'
+alias cpwd='pwd | copia'
+alias gfolder='pwd | rev | cut -d/ -f1 | rev | copia'
 #alias proba="f() { echo "$a" }"
 alias rbash='source ~/.bashrc'
 
