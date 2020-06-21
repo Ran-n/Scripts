@@ -3,12 +3,23 @@
 #+ Creado:	08/06/2019 13:16:09
 #+ Editado:	07/03/2020 22:50:55
 
-# -p fai que non saia erro se xa existe e crea todas as carpetas pai precisas se non existen
-mkdir -p ~/Programas
+echo ''
 
-git clone https://aur.archlinux.org/"$1".git ~/Programas/"$1"
+case $1 in
+	-s)
+		curl -s 'https://aur.archlinux.org/packages/?K='"$2"'&SB=p' | grep '<td' | cut -d\> -f2,3 | cut -d\" -f3 | cut -d\< -f1 | sed '/^[0-9]/ d' | sed 's/>//g'
+		;;
+	-i)
+		# -p fai que non saia erro se xa existe e crea todas as carpetas pai precisas se non existen
+		mkdir -p ~/Programas
 
-#chown $USER:$USER ~/Software/"$1"
-cd ~/Programas/"$1"
+		git clone https://aur.archlinux.org/"$2".git ~/Programas/"$2"
 
-makepkg -sirc --noconfirm
+		#chown $USER:$USER ~/Software/"$1"
+		cd ~/Programas/"$2"
+
+		makepkg -sirc --noconfirm
+		;;
+esac
+
+
