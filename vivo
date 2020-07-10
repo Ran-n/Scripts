@@ -1,0 +1,9 @@
+#! /bin/sh
+#+ Autor:	Ran#
+#+ Creado:	10/07/2020 12:07:39
+#+ Editado:	10/07/2020 12:10:55
+
+# Buscanos se tal programa está sendo executado dado un nome
+# $1 -> Programa a buscar
+
+ps -aux | grep -i $1 | grep -viE 'grep|bin'
