@@ -9,8 +9,9 @@
 ----
 
 ## Índice/Index:
-* [](README.md#getadmins)
-    * [](README.md#getadmins)
+* [LiGNUx](README.md#getadmins)
+    * [fa](README.md#getadmins)
+* [fad](README.md#getadmins)
 
 ### 2ogg
 ### 2pdf
