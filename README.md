@@ -10,12 +10,39 @@
 
 ## Índice/Index:
 * [](README.md#getadmins)
+    * [](README.md#getadmins)
 
+### 2ogg
+### 2pdf
+### aleatorio
+### byte2megabyte
+### cgroff
+### conversor
+### copia
+### crono
+### csview
+### gc
+### gdf
 ### getadmins
 Mostrache os admins de grupos dun sistema gnu/linux.
-
+### gl
+### gifs
+### info
 ### metadata
 Mete a metadata nun ficheiro, autor e datas e tamén cha permite ver se está coa mesma sintaxe.
+### pomodoro
+### rmswaps
+### teras
+### tfno
+### vivo
+### wifipass
+### ydl
+
+### pacma
+### update-grub
+
+### pass\_wifi\_win.py
+### rm-tits.bat
 
 ### rcg
 Para compilar ficheiros groff co macro ms. Usándoo con watch -n 1 podemos facer que se nos faga o pdf ao segundo de que cambiemos algo no ficheiro.
