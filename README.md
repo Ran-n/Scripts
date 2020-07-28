@@ -10,7 +10,29 @@
 
 ## Índice/Index:
 * [LiGNUx](README.md#lignux)
-    * [fa](README.md#getadmins)
+    * [2ogg](README.md#2ogg)
+    * [2pdf](README.md#2pdf)
+    * [aleatorio](README.md#aleatorio)
+    * [byte2megabyte](README.md#byte2megabyte)
+    * [cgroff](README.md#cgroff)
+    * [conversor](README.md#conversor)
+    * [copia](README.md#copia)
+    * [crono](README.md#crono)
+    * [csview](README.md#csview)
+    * [gc](README.md#gc)
+    * [gdf](README.md#gdf)
+    * [getadmins](README.md#getadmins)
+    * [gl](README.md#gl)
+    * [gifs](README.md#gifs)
+    * [info](README.md#info)
+    * [metadata](README.md#metadata)
+    * [pomodoro](README.md#pomodoro)
+    * [rmswaps](README.md#rmswaps)
+    * [teras](README.md#teras)
+    * [tfno](README.md#tfno)
+    * [vivo](README.md#vivo)
+    * [wifipass](README.md#wifipass)
+    * [ydl](README.md#ydl)
 * [ArchLinux](README.md#archlinux)
     * [pacma](README.md#pacma)
     * [update-grub](README.md#update-grub)
@@ -96,7 +118,6 @@ Mostra os contrasinais para as redes que tes gardadas no teu equipo windows.
 
 It shows the passwords for the networks saved on your computer.
 <!--- -->
-
 
 ### rm-tits.bat
 
