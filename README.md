@@ -9,17 +9,18 @@
 ----
 
 ## Índice/Index:
-* [LiGNUx](README.md#getadmins)
+* [LiGNUx](README.md#lignux)
     * [fa](README.md#getadmins)
-* [ArchLinux](README.md#getadmins)
+* [ArchLinux](README.md#archlinux)
     * [pacma](README.md#pacma)
     * [update-grub](README.md#update-grub)
-* [Windows](README.md#getadmins)
+* [Windows](README.md#windows)
     * [pass\_wifi\_win](README.md#pass\_wifi\_win)
     * [rm-tits](README.md#rm-tits)
 
 ----
 
+## LiGNUx
 ### 2ogg
 ### 2pdf
 ### aleatorio
@@ -46,9 +47,11 @@ Mete a metadata nun ficheiro, autor e datas e tamén cha permite ver se está co
 ### wifipass
 ### ydl
 
+## ArchLinux
 ### pacma
 ### update-grub
 
+## Windows
 ### pass\_wifi\_win.py
 ### rm-tits.bat
 
