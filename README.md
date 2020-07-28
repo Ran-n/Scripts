@@ -61,7 +61,25 @@ Converts varios extensions to ogg. It has two inputs, both optional. The first o
 ### copia
 ### crono
 ### csview
+> Galego
+
+Permite ver os contidos dun csv de forma bonita.
+
+> English
+
+Allows you to see content on a csv file in a pleasing manner.
+<!--- -->
+
 ### gc
+> Galego
+
+Autocomitea un proxecto git. Toma a mensaxe do comit como entrada opcional, de non proporcionala o texto por defecto é *cambios*.
+
+> English
+
+Autocommits a git project. It takes the message as an optional entry, if not given the text will read *cambios*.
+<!--- -->
+
 ### gdf
 
 ### getadmins
@@ -124,7 +142,3 @@ It shows the passwords for the networks saved on your computer.
 ### rcg
 Para compilar ficheiros groff co macro ms. Usándoo con watch -n 1 podemos facer que se nos faga o pdf ao segundo de que cambiemos algo no ficheiro.
 
-
-
-### csview
-Permite ver os contidos dun csv de forma bonita.
