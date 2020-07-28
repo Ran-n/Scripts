@@ -75,11 +75,11 @@ Allows you to see content on a csv file in a pleasing manner.
 ### gc
 > Galego
 
-Autocomitea un proxecto git. Toma a mensaxe do comit como entrada opcional, de non proporcionala o texto por defecto é *cambios*.
+Autocomitea un proxecto git. Toma a mensaxe do comit como entrada opcional, de non proporcionala o texto por defecto é "cambios".
 
 > English
 
-Autocommits a git project. It takes the message as an optional entry, if not given the text will read *cambios*.
+Autocommits a git project. It takes the message as an optional entry, if not given the text will read "cambios".
 <!--- -->
 
 ### gdf
@@ -109,11 +109,12 @@ Sets the local username and email on the git folder project.
 ### metadata
 > Galego
 
-Script que permite meter metadata nun ficheiro que comece por *#!*. Esta metadata corresponde co autor, data de creación e última edición. Para obter información sobre o uso executar *metadata -?/-a/--axuda*.
+Script que permite meter metadata nun ficheiro que comece por "#!". Esta metadata corresponde co autor, data de creación e última edición. Para obter información sobre o uso executar "metadata -?/-a/--axuda".
 
 > English
 
-Script that allows you to create metatada to a file that starts with *#!*. Said metadata includes: author, time of creation and time of last edit. To more info about usage execute the following *metadata -?/-a/--axuda*.
+Script that allows you to create metatada to a file that starts with "#!". Said metadata includes: author, time of creation and time of last edit. To more info about usage execute the following "metadata -?/-a/--axuda".
+
 <!--- -->
 
 ### pomodoro
