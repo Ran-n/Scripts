@@ -89,9 +89,11 @@ Script to update the changes on the grub config file. Useful in the Archlinux ca
 ## Windows
 ### pass\_wifi\_win.py
 > Galego
+
 Mostra os contrasinais para as redes que tes gardadas no teu equipo windows.
 
 > English
+
 It shows the passwords for the networks saved on your computer.
 <!--- -->
 
