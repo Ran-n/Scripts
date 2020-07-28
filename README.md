@@ -93,6 +93,15 @@ Shows the admins of the groups of liGNUx system.
 <!--- -->
 
 ### gl
+> Galego
+
+Pon o valor do nome de usuario e correo para o proxecto git actual.
+
+> English
+
+Sets the local username and email on the git folder project.
+<!--- -->
+
 ### gifs
 ### info
 ### metadata
