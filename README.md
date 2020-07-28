@@ -30,6 +30,7 @@ Convirte varias extensións de arquivo a ogg. Ten dúas entradas, ambas opcionai
 
 Converts varios extensions to ogg. It has two inputs, both optional. The first one sets the file to be converted, if no file were given all the folder will be converted. The second one sets the name of the resulting ogg file, if its not given the name will be the same as the previous one.
 
+
 ### 2pdf
 ### aleatorio
 ### byte2megabyte
@@ -50,6 +51,7 @@ Mostrache os admins de grupos dun sistema gnu/linux.
 
 Shows the admins of the groups of liGNUx system.
 
+
 ### gl
 ### gifs
 ### info
@@ -65,7 +67,23 @@ Mete a metadata nun ficheiro, autor e datas e tamén cha permite ver se está co
 
 ## ArchLinux
 ### pacma
+> Galego
+ 
+Script para instalar do repositorio AUR en Arch de maneira manual. Mellor usar o programa como yay porque tamén se encarga das actualizacións.
+
+> English
+
+Script to manually install a archlinux AUR repository. It's best to use yay or some other manager since it manages updates and this doesn't.
+
+
 ### update-grub
+> Galego
+
+Script para actualizar os cambios feitos na configuración do grub. É útil para cando este script non ven co sistema, como pasa en Arch.
+
+> English
+
+Script to update the changes on the grub config file. Useful in the Archlinux case since theres no unique command that does it.
 
 ## Windows
 ### pass\_wifi\_win.py
@@ -77,11 +95,6 @@ Para compilar ficheiros groff co macro ms. Usándoo con watch -n 1 podemos facer
 ### pass\_wifi\_win
 Mostra os contrasinais para as redes que tes gardadas no teu equipo windows.
 
-### update-grub
-script para actualizar os cambios feitos na configuración do grub. É útil para cando este script non ven co sistema, como pasa en Arch.
-
-### pacma
-Script para instalar do repositorio AUR en Arch
 
 ### csview
 Permite ver os contidos dun csv de forma bonita.
