@@ -50,7 +50,7 @@ Mostrache os admins de grupos dun sistema gnu/linux.
 > English
 
 Shows the admins of the groups of liGNUx system.
-
+<!--- -->
 
 ### gl
 ### gifs
@@ -74,7 +74,7 @@ Script para instalar do repositorio AUR en Arch de maneira manual. Mellor usar o
 > English
 
 Script to manually install a archlinux AUR repository. It's best to use yay or some other manager since it manages updates and this doesn't.
-
+<!--- -->
 
 ### update-grub
 > Galego
@@ -84,16 +84,23 @@ Script para actualizar os cambios feitos na configuración do grub. É útil par
 > English
 
 Script to update the changes on the grub config file. Useful in the Archlinux case since theres no unique command that does it.
+<!--- -->
 
 ## Windows
 ### pass\_wifi\_win.py
+> Galego
+Mostra os contrasinais para as redes que tes gardadas no teu equipo windows.
+
+> English
+It shows the passwords for the networks saved on your computer.
+<!--- -->
+
+
 ### rm-tits.bat
 
 ### rcg
 Para compilar ficheiros groff co macro ms. Usándoo con watch -n 1 podemos facer que se nos faga o pdf ao segundo de que cambiemos algo no ficheiro.
 
-### pass\_wifi\_win
-Mostra os contrasinais para as redes que tes gardadas no teu equipo windows.
 
 
 ### csview
