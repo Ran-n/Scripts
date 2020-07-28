@@ -1,7 +1,7 @@
 #! /bin/bash
 #+ Autor:	Ran#
 #+ Creado:	05/06/2019
-#+ Editado:	20/06/2020 14:10:44
+#+ Editado:	28/07/2020 23:33:43
 
 #* Variables
 #* $1 	: Tipo de acción a realizar
@@ -21,10 +21,10 @@ case $1 in
 		sed -i "s|^#!\(.*\)|#!\1\n#+ Autor:\tRan#\n#+ Creado:\t$data\n#+ Editado:\t$data|" $fich
 		;;
 
-	"-a"|"--axuda")
+	"-a"|"--axuda"|"?")
 		echo -e "-e, --editado\t> cambiar data de edición."
 		echo -e "-c, --creado\t> inserir as liñas de autor, creado e editado por primeira vez."
-		echo -e "-a, --axuda\t> imprimir este mensaxe."
+		echo -e "-?,-a, --axuda\t> imprimir este mensaxe."
 		echo -e "-m, --mostrala\t> imprimir a metadata do ficheiro."
 		echo -e "-s, --suprimir\t> suprimir a metadata do ficheiro."
 		;;

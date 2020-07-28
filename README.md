@@ -33,9 +33,11 @@
     * [vivo](README.md#vivo)
     * [wifipass](README.md#wifipass)
     * [ydl](README.md#ydl)
+
 * [ArchLinux](README.md#archlinux)
     * [pacma](README.md#pacma)
     * [update-grub](README.md#update-grub)
+
 * [Windows](README.md#windows)
     * [pass\_wifi\_win](README.md#pass\_wifi\_win)
     * [rm-tits](README.md#rm-tits)
@@ -105,7 +107,15 @@ Sets the local username and email on the git folder project.
 ### gifs
 ### info
 ### metadata
-Mete a metadata nun ficheiro, autor e datas e tamén cha permite ver se está coa mesma sintaxe.
+> Galego
+
+Script que permite meter metadata nun ficheiro que comece por *#!*. Esta metadata corresponde co autor, data de creación e última edición. Para obter información sobre o uso executar *metadata -?/-a/--axuda*.
+
+> English
+
+Script that allows you to create metatada to a file that starts with *#!*. Said metadata includes: author, time of creation and time of last edit. To more info about usage execute the following *metadata -?/-a/--axuda*.
+<!--- -->
+
 ### pomodoro
 ### rmswaps
 ### teras
@@ -148,6 +158,8 @@ It shows the passwords for the networks saved on your computer.
 
 ### rm-tits.bat
 
+
+<!--- 
 ### rcg
 Para compilar ficheiros groff co macro ms. Usándoo con watch -n 1 podemos facer que se nos faga o pdf ao segundo de que cambiemos algo no ficheiro.
-
+-->
