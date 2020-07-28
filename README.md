@@ -22,9 +22,9 @@
 
 ## LiGNUx
 ### 2ogg
-> Convirte varias extensións de arquivo a ogg. Ten dúas entradas, ambas opcionais. A primeira indica o arquivo que queres convirtir, se non se indica ningún collerá toda a carpeta. O segundo indica o nome do ficheiro de saída ogg, se non se indica usarase o mesmo ca antes da conversión.
-> 
-> Converts varios extensions to ogg. It has two inputs, both optional. The first one sets the file to be converted, if no file were given all the folder will be converted. The second one sets the name of the resulting ogg file, if its not given the name will be the same as the previous one.
+Convirte varias extensións de arquivo a ogg. Ten dúas entradas, ambas opcionais. A primeira indica o arquivo que queres convirtir, se non se indica ningún collerá toda a carpeta. O segundo indica o nome do ficheiro de saída ogg, se non se indica usarase o mesmo ca antes da conversión.
+
+Converts varios extensions to ogg. It has two inputs, both optional. The first one sets the file to be converted, if no file were given all the folder will be converted. The second one sets the name of the resulting ogg file, if its not given the name will be the same as the previous one.
 ### 2pdf
 ### aleatorio
 ### byte2megabyte
