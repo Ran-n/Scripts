@@ -235,9 +235,11 @@ Python script that implements pomodoro productivity cycles. Very basic.
 ### wifipass
 > Galego
 
+Mostra e copia ao clipboard o contrasinal dunha rede gardada no sistema. Permite opción interativa ou designar o nome por entrada. Se non se indica nada mostra o contrasinal da rede actual. Para axuda executar "wifipass ?".
 
 > English 
 
+Shows and copies to clipboard the password of a saved network. Execute "wifipass ?" to obtein info about its usage. If no parameter is passed takes the current network as input.
 <!--- -->
 
 ### ydl
