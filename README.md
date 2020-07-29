@@ -1,5 +1,4 @@
 ![GitHub](https://img.shields.io/github/license/ran-n/scripts.svg)
-![PowerShell Gallery](https://img.shields.io/powershellgallery/p/DNS.1.1.1.1)
 ![PowerShell Gallery](https://img.shields.io/badge/plataforma-LiGNUx%20%7C%20Windows10-lightgrey)
 # Scripts
 
