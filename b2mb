@@ -1,9 +1,10 @@
 #! /bin/sh
 #+ Autor:	Ran#
 #+ Creado:	09/04/2020 22:52:50
-#+ Editado:	09/04/2020 23:03:19
+#+ Editado:	29/07/2020 08:43:04
 
+#* Variables:
+#* [$1] : Número de B a convertir en MB
 
 echo $1*0.00000095367431640625 | bc
-#echo '$1 * 0.00000095367431640625' | bc
 
