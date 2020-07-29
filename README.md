@@ -243,9 +243,11 @@ Python script that implements pomodoro productivity cycles. Very basic.
 ### ydl
 > Galego
 
+Script para youtube-dl. Colle catro entradas: A ligazón, primeira parte do nome do ficheiro, segunda parte do nome do ficheiro, se o queremos como video ou audio e, opcionalmente, a extensión que queremos do ficheiro. "ydl ?" para obter informacion.
 
 > English 
 
+Script that wraps youtube-dl. It takes four inputs: The link, first part of the file title, second part of the file title, weather its a video ou a audio and, optionally, the extension of the resulting file. Use "ydl ?" for information on its use.
 <!--- -->
 
 ## ArchLinux
