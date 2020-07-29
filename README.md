@@ -13,7 +13,7 @@
     * [2ogg](README.md#2ogg)
     * [2pdf](README.md#2pdf)
     * [aleatorio](README.md#aleatorio)
-    * [b2mb](README.md#b2mb)
+    * [b2mib](README.md#b2mib)
     * [cgroff](README.md#cgroff)
     * [conversor](README.md#conversor)
     * [copia](README.md#copia)
@@ -73,14 +73,14 @@ Dada unha lonxitude devolve unha catex (cadea de texto) aleatoria desa largura c
 Given a string length returns a ramdomized string of such length with characters such as: A-Za-z0-9!"#$%&'\\''()\*+,-./:;<=>?@[]^\_`{|}~. If a second input is given only basic characters will be used, such as: A-Za-z0-9.
 <!--- -->
 
-### b2mb
+### b2mib
 > Galego
 
-Convirte un díxito de bytes (B) a megabytes (MB).
+Convirte un díxito de bytes (B) a mebibytes (MiB).
 
 > English 
 
-Converts a bytes (B) value into megabytes (MB).
+Converts a bytes (B) value into mebibytes (MiB).
 <!--- -->
 
 ### cgroff
