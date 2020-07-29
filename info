@@ -1,7 +1,7 @@
 #! /bin/sh
 #+ Autor:	Ran#
 #+ Creado:	28/04/2020 16:15:28
-#+ Editado:	28/04/2020 16:23:58
+#+ Editado:	29/07/2020 21:20:06
 
 case $1 in
 	s)
@@ -20,6 +20,8 @@ case $1 in
 		# copiamolo no portapapeis
 		copia $BYTES
 		;;
-	*)
-		echo s para mostrar segundos
+	?)
+		echo s fich para mostrar segundos
+        echo b fich para mostrar bytes
+        ;;
 esac

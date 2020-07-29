@@ -1,10 +1,12 @@
 #! /bin/sh
 #+ Autor:	Ran#
 #+ Creado:	18/03/2020 14:53:03
-#+ Editado:	16/06/2020 23:01:27
+#+ Editado:	29/07/2020 21:10:38
 
+#-------------------------------------
 #* Variables
 #* [$1] : Texto a copiar na clipboard
+#-------------------------------------
 
 # miramos por stdin e por parametros a mensaxe. Prioriza os parámetros de haber ambos
 [ -z "$1" ] && mensaxe=$(cat -) || mensaxe="$1"

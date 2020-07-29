@@ -1,14 +1,16 @@
 #! /bin/sh
 #+ Autor:	Ran#
 #+ Creado:	18/03/2020 00:29:44
-#+ Editado:	22/04/2020 19:33:25
+#+ Editado:	29/07/2020 10:18:12
 
+#----------------------------------------
 #* Variables:
-#* $1 : Tipo de conversión a realizar.
-#* $2 : Arquivo a converter.		[Opcional]
+#* $1   : Tipo de conversión a realizar.
+#* [$2] : Arquivo a converter.
+#----------------------------------------
 
 case $1 in
-# de mp4<>mkv son wrappers sobre o mesmo contido. Recodificar faríanos perder calidade.
+    # de mp4<>mkv son wrappers sobre o mesmo contido. Recodificar faríanos perder calidade.
 	'mp4mkv')
 		if [ -z $2 ]; then
 			for i in *.mp4; do
