@@ -40,7 +40,7 @@
     * [update-grub](README.md#update-grub)
 
 * [Windows](README.md#windows)
-    * [pass\_wifi\_win](README.md#pass\_wifi\_win)
+    * [pass\_wifi\_win](README.md#pass_wifi_win)
     * [rm-tits](README.md#rm-tits)
 
 ----
