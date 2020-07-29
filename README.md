@@ -270,7 +270,7 @@ Script to update the changes on the grub config file. Useful in the Archlinux ca
 <!--- -->
 
 ## Windows
-### pass\_wifi\_win.py
+### pass\_wifi\_win
 > Galego
 
 Mostra os contrasinais para as redes que tes gardadas no teu equipo windows.
@@ -280,7 +280,7 @@ Mostra os contrasinais para as redes que tes gardadas no teu equipo windows.
 It shows the passwords for the networks saved on your computer.
 <!--- -->
 
-### rm-tits.bat
+### rm-tits
 > Galego
 
 Elimina o campo de título dos arquivos ".mkv" dunha carpeta.
