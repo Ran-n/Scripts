@@ -53,15 +53,64 @@ Convirte varias extensións de arquivo a ogg. Ten dúas entradas, ambas opcionai
 > English 
 
 Converts varios extensions to ogg. It has two inputs, both optional. The first one sets the file to be converted, if no file were given all the folder will be converted. The second one sets the name of the resulting ogg file, if its not given the name will be the same as the previous one.
-
+<!--- -->
 
 ### 2pdf
+> Galego
+
+
+> English 
+
+<!--- -->
+
 ### aleatorio
+> Galego
+
+
+> English 
+
+<!--- -->
+
 ### byte2megabyte
+> Galego
+
+
+> English 
+
+<!--- -->
+
 ### cgroff
+> Galego
+
+
+> English 
+
+<!--- -->
+
 ### conversor
+> Galego
+
+
+> English 
+
+<!--- -->
+
 ### copia
+> Galego
+
+
+> English 
+
+<!--- -->
+
 ### crono
+> Galego
+
+
+> English 
+
+<!--- -->
+
 ### csview
 > Galego
 
@@ -83,7 +132,13 @@ Autocommits a git project. It takes the message as an optional entry, if not giv
 <!--- -->
 
 ### gdf
+> Galego
 
+
+> English 
+
+<!--- -->
+  
 ### getadmins
 > Galego
 
@@ -105,7 +160,21 @@ Sets the local username and email on the git folder project.
 <!--- -->
 
 ### gifs
+> Galego
+
+
+> English 
+
+<!--- -->
+
 ### info
+> Galego
+
+
+> English 
+
+<!--- -->
+
 ### metadata
 > Galego
 
@@ -114,16 +183,65 @@ Script que permite meter metadata nun ficheiro que comece por "#!". Esta metadat
 > English
 
 Script that allows you to create metatada to a file that starts with "#!". Said metadata includes: author, time of creation and time of last edit. To more info about usage execute the following "metadata -?/-a/--axuda".
-
 <!--- -->
 
 ### pomodoro
+> Galego
+
+Script en python que fai ciclos en pomodoro. Moi rudimentario.
+
+> English 
+
+Python script that implements pomodoro productivity cycles. Very basic.
+<!--- -->
+
 ### rmswaps
+> Galego
+
+
+> English 
+
+<!--- -->
+
 ### teras
+> Galego
+
+
+> English 
+
+<!--- -->
+
 ### tfno
+> Galego
+
+
+> English 
+
+<!--- -->
+
 ### vivo
+> Galego
+
+
+> English 
+
+<!--- -->
+
 ### wifipass
+> Galego
+
+
+> English 
+
+<!--- -->
+
 ### ydl
+> Galego
+
+
+> English 
+
+<!--- -->
 
 ## ArchLinux
 ### pacma
@@ -158,9 +276,11 @@ It shows the passwords for the networks saved on your computer.
 <!--- -->
 
 ### rm-tits.bat
+> Galego
 
+Elimina o campo de título dos arquivos ".mkv" dunha carpeta.
 
-<!--- 
-### rcg
-Para compilar ficheiros groff co macro ms. Usándoo con watch -n 1 podemos facer que se nos faga o pdf ao segundo de que cambiemos algo no ficheiro.
--->
+> English
+
+Removes the value from the title field of all ".mkv" fiels of a folder.
+<!--- -->
