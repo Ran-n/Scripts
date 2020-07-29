@@ -66,9 +66,11 @@ Converts varios extensions to ogg. It has two inputs, both optional. The first o
 ### aleatorio
 > Galego
 
+Dada unha lonxitude devolve unha catex (cadea de texto) aleatoria desa largura composta por caracteres tales como: A-Za-z0-9!"#$%&'\\''()\*+,-./:;<=>?@[]^\_`{|}~. A presenza dunha segunda entrada fai que estes caracteres sexan só os básicos, a saber: A-Za-z0-9.
 
 > English 
 
+Given a string length returns a ramdomized string of such length with characters such as: A-Za-z0-9!"#$%&'\\''()\*+,-./:;<=>?@[]^\_`{|}~. If a second input is given only basic characters will be used, such as: A-Za-z0-9.
 <!--- -->
 
 ### byte2megabyte

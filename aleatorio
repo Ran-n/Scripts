@@ -1,34 +1,15 @@
 #! /bin/sh
 #+ Autor:	Ran#
 #+ Creado:	15/03/2020 01:12:36
-#+ Editado:	19/03/2020 14:48:17
+#+ Editado:	29/07/2020 08:29:57
 
 #* Variables:
-#* $1 : Lonxitude da cadea a voltar.
-#* $2 : A súa existencia dinos que tipo de caracteres queremos usar.
-
+#* $1   : Lonxitude da cadea a voltar.
+#* [$2] : A súa existencia dinos que tipo de caracteres queremos usar.
 
 # se a variable da lonxitude do string é nula
 [ -z $1 ] && printf '** Dime unha lonxitude en número\n' && exit 1
 
-
 # se a variable é nula usamos caracteres básicos
 # se a variable non é nula metemos fantasía
 [ -z $2 ] && (</dev/urandom LC_ALL=C tr -dc 'A-Za-z0-9!"#$%&'\''()*+,-./:;<=>?@[\]^_`{|}~' | head -c $1; echo) || (LC_ALL=C tr -dc A-Za-z0-9 </dev/urandom | head -c $1; echo)
-#[ "$2" = "+" ] && (</dev/urandom LC_ALL=C tr -dc 'A-Za-z0-9!"#$%&'\''()*+,-./:;<=>?@[\]^_`{|}~' | head -c $1; echo) || (LC_ALL=C tr -dc A-Za-z0-9 </dev/urandom | head -c $1; echo)
-
-
-
-# o mesmo pero en longo
-#if [ -z $1 ]; then
-#	printf '** Dime unha lonxitude en número\n'
-#	exit 1
-#fi
-
-# o mesmo pero en longo
-#if [ -z $2 ]; then
-#	LC_ALL=C tr -dc A-Za-z0-9 </dev/urandom | head -c $1; echo
-#
-#else
-#	</dev/urandom LC_ALL=C tr -dc 'A-Za-z0-9!"#$%&'\''()*+,-./:;<=>?@[\]^_`{|}~' | head -c $1; echo
-#fi
