@@ -1,12 +1,21 @@
 #! /bin/sh
 #+ Autor:	Ran#
 #+ Creado:	28/04/2020 16:15:28
-#+ Editado:	29/07/2020 21:20:06
+#+ Editado:	03/08/2020 19:09:30
+
+#-------------------------------
+#* Variables:
+#* $1 : Opción
+#* $2 : Ficheiro
+#-------------------------------
+
+# cambiamoslle o nome a $2
+fich=$2
 
 case $1 in
 	s)
 		# achamos o número de segundos
-		SEGS=$(ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 "$2" | cut -d. -f1)
+		SEGS=$(ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 "$fich" | cut -d. -f1)
 		# imprimimolo en pantalla
 		echo $SEGS
 		# copiamolo no portapapeis
@@ -14,14 +23,26 @@ case $1 in
 		;;
 	b)
 		# acamos os bytes do ficheiro
-		BYTES=$(du -b "$2" | awk '{ print $1 }')
+		BYTES=$(du -b "$fich" | awk '{ print $1 }')
 		# imprimimolo por pantalla
 		echo $BYTES
 		# copiamolo no portapapeis
 		copia $BYTES
 		;;
+    c)
+        # sacamos o codec do ficheiro
+        CODEC=$(ffprobe -v error -select_streams v:0 -show_entries stream=codec_name -of default=noprint_wrappers=1:nokey=1 "$fich")
+        
+		# imprimimolo por pantalla
+        echo $CODEC
+
+		# copiamolo no portapapeis
+        copia $CODEC
+        ;;
+
 	?)
 		echo s fich para mostrar segundos
         echo b fich para mostrar bytes
+        echo c fich para mostrar o codec
         ;;
 esac
