@@ -1,0 +1,10 @@
+#! /bin/sh
+#+ Autor:	Ran#
+#+ Creado:	12/04/2021 13:01:40
+#+ Editado:	12/04/2021 13:03:58
+
+# limpa a caché
+# /var/cache/pacman/pkg/
+# e os repositorios sen usar
+# /var/lib/pacman
+pacman -Scc
