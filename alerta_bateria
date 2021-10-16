@@ -1,0 +1,17 @@
+#! /bin/sh
+#+ Autor:	Ran#
+#+ Creado:	16/10/2021 19:54:38
+#+ Editado:	16/10/2021 20:30:32
+
+PORCENTAXE_BATERIA=100
+TEMPO_ENTRE_AVISOS=30
+
+bat=$(cat /sys/class/power_supply/BAT1/capacity)
+estado=$(cat /sys/class/power_supply/BAT1/status)
+
+if [ $bat -lt $PORCENTAXE_BATERIA ] && [ $estado = "Discharging" ]; then
+    while [ $estado = "Discharging" ]; do
+        notify-send -u critical -i terminal -t 10 "Batería ó "$bat"%"
+        sleep $TEMPO_ENTRE_AVISOS 
+    done
+fi 
