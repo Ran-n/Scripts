@@ -1,10 +1,10 @@
 #! /bin/sh
 #+ Autor:	Ran#
 #+ Creado:	16/10/2021 19:54:38
-#+ Editado:	16/10/2021 20:30:32
+#+ Editado:	16/10/2021 20:31:25
 
-PORCENTAXE_BATERIA=100
-TEMPO_ENTRE_AVISOS=30
+PORCENTAXE_BATERIA=15
+TEMPO_ENTRE_AVISOS=60
 
 bat=$(cat /sys/class/power_supply/BAT1/capacity)
 estado=$(cat /sys/class/power_supply/BAT1/status)
