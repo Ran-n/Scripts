@@ -1,0 +1,22 @@
+#! /bin/sh
+# -*- coding: utf-8 -*-
+# ------------------------------------------------------------------------------
+#+ Autor:  	Ran#
+#+ Creado: 	2022/09/16 16:40:57.230944
+#+ Editado:	2022/09/16 17:06:11.465806
+# ------------------------------------------------------------------------------
+
+BAT_FILE=$(find /sys/class/power_supply/BAT*/* | grep capacity$)
+
+battery(){
+    [[ -f $BAT_FILE ]]\
+        && printf "%s%s\n" $(cat $BAT_FILE) "%"\
+        || echo NA
+}
+
+case $1 in
+    --battery|--bat|-b)
+        battery
+        ;;
+esac
+
